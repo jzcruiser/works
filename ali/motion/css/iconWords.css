@@ -1,0 +1,274 @@
+
+body {min-width: 1100px;margin: 0;overflow-x: hidden;color: #323233;font-size: 14px;font-family: Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC,Microsoft YaHei;;background-color: #f7f8fa;}
+p { margin: 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0;font-size: inherit;color: #323233;font-weight: normal;line-height: 1.5;}
+ul,ol {margin: 0;padding: 0;list-style: none;}
+a {text-decoration: none;}
+.content{width: 1200px;padding:60px 0;}
+.container{width: 1920px;margin-left:-360px;padding:0;}
+.container h3{margin: 25px 0;}
+.fl{float: left;margin:0 30px 30px 0;}
+.demoTit{height:56px;margin-top:-56px;}
+.demoTit a{float: right;cursor: pointer;}
+
+
+/*****************公用的几个css,建议都引入****************/
+.trans01s{transition:0.1s ease-in;}
+.trans02s{transition:0.2s ease-in;}
+.trans03s{transition:0.3s ease-in;}
+.trans04s{transition:0.4s ease-in;}
+.trans05s{transition:0.5s ease-in;}
+.trans06s{transition:0.5s ease-in;}
+.trans07s{transition:0.7s ease-in;}
+.trans08s{transition:0.5s ease-in;}
+.trans09s{transition:0.9s ease-in;}
+.trans1s{transition:1s ease-in;}
+.trans2s{transition:2s ease-in;}
+.trans3s{transition:3s ease-in;}
+.trans4s{transition:4s ease-in;}
+.trans5s{transition:5s ease-in;}
+
+
+/*************************图标文字效果css*************************************/
+
+
+/*多语言效果1*/
+.language-style-1{display: flex;overflow: hidden;justify-content: center;}
+.language-style-1 li{margin:0 2px;padding-top: 10px; }
+.language-style-1 li img{width: 70px;height: 70px;display: block;transition:0.2s ease-in;}
+.language-style-1 p{margin-top:5px;line-height: 30px;color:#555;text-align: center;}
+.language-style-1 a:hover img{transform: translateY(-10px);}
+
+/*多语言效果2*/
+.language-style-2{display: flex;overflow: hidden;justify-content: center;}
+.language-style-2 li{margin:0 2px;padding-top: 10px; }
+.language-style-2 li img{width: 70px;height: 70px;display: block;transition:0.2s ease-in;}
+.language-style-2 p{margin-top:5px;line-height: 30px;color:#555;text-align: center;}
+.language-style-2 a:hover img{transform: scale(1.2);}
+
+/*多语言效果3*/
+.language-style-3{display: flex;overflow: hidden;justify-content: center;}
+.language-style-3 li{width:70px;margin:0 3px;padding-top: 10px; }
+.language-style-3 li img{width: 60px;height: 44px;display: block;margin:0 auto;transition:0.2s ease-in;}
+.language-style-3 p{margin-top:10px;line-height: 30px;color:#555;text-align: center;}
+.language-style-3 a:hover img{transform: scale(1.2);}
+
+/*多语言效果4*/
+.language-style-4{display: flex;overflow: hidden;justify-content: center;}
+.language-style-4 li{width:70px;margin:0 3px;padding-top: 10px; }
+.language-style-4 li img{width: 70px;height: 100px;display: block;margin:0 auto;transition:0.2s ease-in;}
+.language-style-4 p{line-height: 30px;color:#555;text-align: center;}
+.language-style-4 a:hover img{transform: translateY(-10px);}
+
+/*多语言效果5*/
+.language-style-5{display: flex;overflow: hidden;justify-content: center;}
+.language-style-5 li{margin:0 3px;padding-top: 10px; }
+.language-style-5 li img{width: 70px;height: 80px;display: block;transition:0.2s ease-in;}
+.language-style-5 p{margin-top:5px;line-height: 30px;color:#555;text-align: center;}
+.language-style-5 a:hover img{transform: translateY(-10px);}
+
+
+
+/*卖点效果1*************************************************************************************************/
+.points-style-1{width:1220px;content: "";display: inline-block;}
+.points-style-1 li{width: 500px;margin: 0 20px 20px 0;background: #fff;color: #333;float: left;padding: 45px;overflow: hidden;position: relative;}
+.points-style-1 li .img{width: 125px;height: 125px;overflow: hidden;border-radius: 50%;float: left;}
+.points-style-1 li .img img{width: 125px;height: 125px;background: #f99323;display: block;}
+.points-style-1 li .info{width: 355px;height: 125px;float: left;padding-left:20px;justify-content: center;display: flex;flex-direction: column;}
+.points-style-1 li .info .tit{height: 30px;line-height: 30px;font-weight: 700;font-size: 24px;overflow: hidden;color: #333;}
+.points-style-1 li .info .ms{font-size: 18px;max-height: 60px;line-height: 30px;color: #333;margin-top: 10px;overflow: hidden;}
+.points-style-1 li:hover{box-shadow: 0 0 20px #ddd;}
+/*效果1 横向翻转*/
+.points-style-1 .effect1:hover .img{transform: rotateY(180deg);} 
+/*效果2 上下抖动*/
+.points-style-1 .effect2:hover .img{animation: translateY15 linear 1s;} 
+@keyframes translateY15 {
+	20% {transform: translateY(15px)}
+	40% {transform: translateY(-10px)}
+	60% {transform: translateY(5px)}
+	80% {transform: translateY(-5px)}
+	to {transform: translateY(0px)}
+}
+/*效果3 缩放抖动*/
+.points-style-1 .effect3 .img{display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.points-style-1 .effect3:hover .img{transform: scale(1.1);opacity: 0.9;}
+.points-style-1 .effect3:hover .img img{transform: scale(0.91);}
+/*效果4 背景变色*/
+.points-style-1 .effect4:hover{background: #f60}
+.points-style-1 .effect4:hover .tit,.points-style-1 .effect4:hover .ms{color:#fff;} 
+
+
+/*卖点效果2*************************************************************************************************/
+.points-style-2{width:1230px;content: "";display: inline-block;}
+.points-style-2 li{width: 277.5px;margin: 0 30px 30px 0;float: left;position: relative;background: #fff;overflow: hidden;}
+.points-style-2 li a{width:100%;height:100%;padding:30px 0;display: block;position: relative;}
+.points-style-2 li .img{width: 100px;height: 100px;margin:0 auto;overflow: hidden;border-radius: 50%;}
+.points-style-2 li .img img{width: 100%;height: 100%;background: #f8734b;display: block;}
+.points-style-2 li .info{padding:30px 20px 0;text-align: center;overflow: hidden;position: relative;z-index: 2;}
+.points-style-2 li .info .tit{height: 30px;line-height: 30px;font-weight: 700;font-size: 18px;color: #333;}
+.points-style-2 li .info .ms{font-size: 14px;height: 60px;line-height: 20px;color: #666;margin-top: 10px;overflow: hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+/*效果1 底部飞入*/
+.points-style-2 .effect1 .bg{background: linear-gradient(transparent,rgba(0,0,0,0.5));height: 150%;width: 100%;opacity: 0;position: absolute;top: 100%;z-index: 1;transition: .5s ease-out;}
+.points-style-2 .effect1 .bg1{border-radius: 0 100% 0 0;left: -50%;}
+.points-style-2 .effect1 .bg2{border-radius: 100% 0 0 0;left: 50%;}
+.points-style-2 .effect1:hover .bg1{top: -50%;opacity: 0.7;border-radius: 0 35% 0 0;}
+.points-style-2 .effect1:hover .bg2{top: -50%;opacity: 0.7;border-radius: 35% 0 0 0;}
+/*效果2 悬停遮罩*/
+.points-style-2 .effect2 .bg{background: linear-gradient(transparent,rgba(0,0,0,0.5));height: 100%;width: 25%;transform: translateY(-100%);position: absolute;left: 0;top: 0;transition: all 0.3s;}
+.points-style-2 .effect2 .bg2{left: 25%;}
+.points-style-2 .effect2 .bg3{left: 50%;}
+.points-style-2 .effect2 .bg4{left: 75%;}
+.points-style-2 .effect2:hover .bg{transform: translateY(0);}
+.points-style-2 .effect2:hover .bg2{transition-delay: 0.075s;}
+.points-style-2 .effect2:hover .bg3{transition-delay: 0.15s;}
+.points-style-2 .effect2:hover .bg4{transition-delay: 0.225s;}
+/*效果3 横向翻转*/
+.points-style-2 .effect3:hover .img{transform: rotateY(180deg);} 
+/*效果4 左右旋转*/
+.points-style-2 .effect4{transform-origin: center top;} 
+.points-style-2 .effect4:hover{animation: rotate3 linear 1s;} 
+@keyframes rotate3 {
+	20% {transform: rotate(3deg)}
+	40% {transform: rotate(-2deg)}
+	60% {transform: rotate(1deg)}
+	80% {transform: rotate(-1deg)}
+	to {transform: rotate(0deg)}
+}
+/*效果5 底部横线+上滑*/
+.points-style-2 .effect5 .line{width:0;height: 2px;background: #999;position: absolute;bottom: 0;}
+.points-style-2 .effect5:hover .img{transform:translateY(-10px);}
+.points-style-2 .effect5:hover .line{width: 100%;}
+/*效果6 底部横线+缩放*/
+.points-style-2 .effect6 .line{width:100%;height: 2px;background: #999;position: absolute;bottom: 0;transform:scale(0);}
+.points-style-2 .effect6:hover .img{transform:scale(1.1);}
+.points-style-2 .effect6:hover .line{transform:scale(1);}
+/*效果7 底部横线+缩放*/
+.points-style-2 .effect7 .info{padding:30px 0 0;}
+.points-style-2 .effect7 .lineBox{margin:20px 0;width:100%;height: 1px;display: flex;align-items: center;background: #ccc;}
+.points-style-2 .effect7 .lineBox .line-1{width:100%;height: 1px;background: #086fce;position: absolute;left:0;right:0;transform: scale(0);}
+.points-style-2 .effect7 .lineBox .line-2{width:50px;height: 5px;background: #086fce;margin:0 auto;}
+.points-style-2 .effect7 .info .ms{padding:0 20px;}
+.points-style-2 .effect7:hover .img{transform:rotateY(180deg);}
+.points-style-2 .effect7:hover .lineBox .line-1{transform:scale(1);}
+
+
+
+/*卖点效果3*************************************************************************************************/
+.points-style-3{width:1200px;content: "";display: inline-block;}
+.points-style-3 li{width: 400px;height:400px;text-align: center; float: left;position: relative;overflow: hidden;}
+.points-style-3 .img{width: 100%;height: 100%;display: block;position: absolute;}
+.points-style-3 a{width: 100%;height: 100%;display: block;position: relative;background: rgba(0,0,0,.2);overflow: hidden;}
+.points-style-3 .icon{width: 70px;height: 70px;margin:120px auto 0;}
+.points-style-3 .icon img{width: 100%;height: 100%;}
+.points-style-3 .tit{font-size: 24px;color: #fff;margin-top: 24px;line-height: 33px;font-weight: 700;}
+.points-style-3 .line{width: 24px;height: 4px;background: #fff;margin:24px auto 0;}
+.points-style-3 .ms{padding:0 30px;font-size: 16px;color: #fff;margin-top: 150px;line-height: 24px;}
+/*效果1 上滑*/
+.points-style-3 .effect1:hover a{background: rgba(2,137,255,.5);}
+.points-style-3 .effect1:hover .icon{margin-top: -70px;}
+.points-style-3 .effect1:hover .tit{margin-top: 110px;}
+.points-style-3 .effect1:hover .ms{margin-top: 40px;}
+/*效果2 上滑2*/
+.points-style-3 .effect2 .line{width: 100px;transform: scaleX(0);}
+.points-style-3 .effect2 .ms{margin-top: 50px;opacity: 0;}
+.points-style-3 .effect2:hover .img{transform: scale(1.05);}
+.points-style-3 .effect2:hover a{background: rgba(0,0,0,.5);}
+.points-style-3 .effect2:hover .icon{opacity: 0;}
+.points-style-3 .effect2:hover .tit{margin-top: -50px;}
+.points-style-3 .effect2:hover .line{transform: scaleX(1);}
+.points-style-3 .effect2:hover .ms{margin-top: 40px;opacity:1;}
+/*效果3 3D上下翻转*/
+.points-style-3 .effect3 {perspective:1000px;}
+.points-style-3 .effect3 .img{transform: translateY(0) rotateX(0);}
+.points-style-3 .effect3 a{background: none;}
+.points-style-3 .effect3 .ms{opacity: 0;}
+.points-style-3 .effect3:hover .img{transform: translateY(-100%) rotateX(90deg);transform-origin:bottom center;}
+.points-style-3 .effect3:hover a{background: rgba(0,0,0,.5);}
+.points-style-3 .effect3:hover .icon{margin-top: -70px;opacity: 1;}
+.points-style-3 .effect3:hover .tit{margin-top: 110px;opacity: 1;}
+.points-style-3 .effect3:hover .line{opacity: 1;}
+.points-style-3 .effect3:hover .ms{margin-top: 40px;opacity: 1;}
+/*效果4 3D横向翻转*/
+.points-style-3 .effect4{perspective: 1000px;}
+.points-style-3 .effect4 .line{width: 100px;transform: scaleX(0);}
+.points-style-3 .effect4 .ms{margin-top: 50px;opacity: 0;}
+.points-style-3 .effect4:hover .img{transform: rotateY(-90deg);}
+.points-style-3 .effect4:hover a{background: rgba(0,0,0,.5);}
+.points-style-3 .effect4:hover .icon{opacity: 0;}
+.points-style-3 .effect4:hover .tit{margin-top: -50px;}
+.points-style-3 .effect4:hover .line{transform: scaleX(1);}
+.points-style-3 .effect4:hover .ms{margin-top: 40px;opacity:1;}
+/*效果5 缩小翻转*/
+.points-style-3 .effect5 .img{transform: scale(1.1);}
+.points-style-3 .effect5 .icon{margin-top:60px;}
+.points-style-3 .effect5 .tit{margin-bottom: 24px;}
+.points-style-3 .effect5 .line{width: 80%;height: 1px;margin-top: 0;}
+.points-style-3 .effect5 .line2{margin-top: -1px;}
+.points-style-3 .effect5 .ms{margin-top: 30px;}
+.points-style-3 .effect5:hover .img{transform: scale(1);}
+.points-style-3 .effect5:hover a{background: rgba(0,0,0,.5);}
+.points-style-3 .effect5:hover .tit{transform: translateY(10px);}
+.points-style-3 .effect5:hover .line1{transform:rotate(45deg);opacity: 0.5;}
+.points-style-3 .effect5:hover .line2{transform:rotate(-45deg);opacity: 0.5;}
+.points-style-3 .effect5:hover .ms{transform: translateY(-10px);}
+/*效果6 缩放*/
+.points-style-3 .effect6 .bg{position: absolute;top: 20px;right: 20px;bottom: 20px;left: 20px;border: 1px solid #fff;box-shadow: 0 0 0 20px rgba(255,255,255,0.2);opacity: 0;transition:0.35s;transform: scale3d(1.4,1.4,1);}
+.points-style-3 .effect6 .line{width: 100px;height:1px;transform: scaleX(0);}
+.points-style-3 .effect6 .ms{margin-top: 50px;opacity: 0;}
+.points-style-3 .effect6:hover .img{transform: scale(1.05);}
+.points-style-3 .effect6:hover a{background: rgba(0,0,0,.5);}
+.points-style-3 .effect6:hover .bg{opacity: 1;transform: scale3d(1,1,1);}
+.points-style-3 .effect6:hover .icon{opacity: 0;}
+.points-style-3 .effect6:hover .tit{margin-top: -50px;}
+.points-style-3 .effect6:hover .line{transform: scaleX(1);}
+.points-style-3 .effect6:hover .ms{margin-top: 40px;opacity:1;}
+
+
+
+
+/*客服效果1*************************************************************************************************/
+.service-style-1{width:1220px;}
+.service-style-1 li{width: 180px;margin:0 22px 22px 0;padding-bottom:20px;border-radius: 200px;background: #fff;text-align: center;position: relative;float: left;}
+.service-style-1 li .img{width: 130px;height: 130px;margin:20px auto;border-radius: 50%;display: block;border: 2px solid #f8f8f8;position: relative;}
+.service-style-1 li .mark{position: absolute;top:140px;left:80px;}
+.service-style-1 li .name{height: 30px;color: #333;font-size: 16px;font-weight: 700;line-height: 30px;overflow: hidden;position: relative;}
+.service-style-1 li .icon{font-size: 14px;color: #666;position: relative;}
+/*效果1 横向翻转*/
+.service-style-1 .effect1:hover .img{transform: rotateY(180deg);} 
+/*效果2 上下抖动*/
+.service-style-1 .effect2 a{display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.service-style-1 .effect2:hover a{transform: translateY(-20px);opacity: 0.9;}
+.service-style-1 .effect2:hover .img{transform: translateY(20px);}
+/*效果3 旋转抖动*/
+.service-style-1 .effect3:hover .img{animation: rotate20 linear 1s;} 
+@keyframes rotate20 {
+	20% {transform: rotate(20deg)}
+	40% {transform: rotate(-15deg)}
+	60% {transform: rotate(10deg)}
+	80% {transform: rotate(-5deg)}
+	to {transform: rotate(0deg)}
+}
+/*效果4 缩放抖动*/
+.service-style-1 .effect4 a{display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.service-style-1 .effect4:hover a{transform: scale(1.1);opacity: 0.9;}
+.service-style-1 .effect4:hover .img{transform:  scale(0.91);}
+/*效果5 向上滑动*/
+.service-style-1 .effect5:hover{transform: translateY(-20px);} 
+/*效果6 背景变色*/
+.service-style-1 .effect6:hover{background: #f60;} 
+.service-style-1 .effect6:hover .name,.service-style-1 .effect6:hover .icon{color:#fff;} 
+/*效果7 背景变化*/
+.service-style-1 .effect7{background: none;} 
+.service-style-1 .effect7 .bg{width: 100%;height:160px;background: #fff;position: absolute;bottom:0;} 
+.service-style-1 .effect7 a{display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.service-style-1 .effect7:hover .bg{border-radius:60px 0;} 
+.service-style-1 .effect7:hover a{transform: translateY(-20px);opacity: 0.9;}
+.service-style-1 .effect7:hover .img{transform: translateY(20px);}
+
+
+
+
+
+
+
+

@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html style="min-width:1240px;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>沃姆设计 阿里国际站 图片+文字结合效果</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/css.css">
+    <link rel="stylesheet" href="./css/picWords.css">
+    <link rel="stylesheet" href="../../css/reveal.css">    
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.reveal.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="../../images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1>图片+文字效果组合</h1>
+
+<ul style="overflow: hidden;">
+
+<li class="fl">
+<div class="picWords-style-1">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#01：放大+蒙层</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-1{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-1 a:before{content:"";background: linear-gradient(to left top,#11998e,#38ef7d);height: 100%;width: 100%;opacity: 0;position: absolute;left: 0;top: 0;z-index: 1;}
+.picWords-style-1 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-1 p.tit2{opacity: 0;transform: scale(0);}
+.picWords-style-1 a:hover img{transform: scale(1.2);}
+.picWords-style-1 a:hover:before{opacity: 0.6;}
+.picWords-style-1 a:hover p.tit1{opacity: 0;}
+.picWords-style-1 a:hover p.tit2{opacity: 1;transform: scale(1);transition:0.4s ease-in;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-2">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#02：3D开合</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-2{width: 300px;height: 210px;position: relative;overflow: hidden;perspective:300px;}
+.picWords-style-2 a:before,.picWords-style-2 a:after{transition:0.4s ease-in;content:"";background: rgba(255,255,255,0.8);width: 44%;height: 42%;opacity: 0;position: absolute;top: 50%;z-index: 1;}
+.picWords-style-2 a:before{transform: translateY(-50%) rotateY(90deg);transform-origin: right center;left: 5%;}
+.picWords-style-2 a:after{transform: translateY(-50%) rotateY(-90deg);transform-origin: left center;right: 7%;}
+.picWords-style-2 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-2 p.tit2{opacity: 0;transform: scale(0);color:#6c5ce7;}
+.picWords-style-2 a:hover:before,.picWords-style-2 a:hover:after{opacity: 1;transform: translateY(-50%) rotateY(0);}
+.picWords-style-2 a:hover p.tit1{opacity: 0;}
+.picWords-style-2 a:hover p.tit2{opacity: 1;transform: scale(1);transition:0.4s ease-in;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-3">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#03：3D旋转</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-3{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-3 a{width: 99%;height: 100%;background: linear-gradient(#8E2DE2,#4A00E0);display: block;}
+.picWords-style-3 a:before{content:"";width: 100%;height: 100%;opacity: 0;position: absolute;top: 0;left: 0;z-index: 1;transition: all 0.5s;}
+.picWords-style-3 img{clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+.picWords-style-3 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-3 p.tit2{opacity: 0;color:#fff;transform: rotate(-55deg);}
+.picWords-style-3 a:hover:before{opacity: 1;transform: translateY(-50%) rotateY(0);}
+.picWords-style-3 a:hover p.tit1{opacity: 0;}
+.picWords-style-3 a:hover p.tit2{opacity: 1;transform: rotate(0deg);transition:0.4s ease-in;}
+.picWords-style-3 a:hover img{clip-path: polygon(50% 0, 99% 50%, 50% 99%, 0 50%);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-4">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#04：右侧飞入</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-4{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-4 a:before{content: "";background: rgba(255,255,255,0.8);width: 150%;height: 150%;opacity: 0;transform: rotate(45deg);position: absolute;top:0;right: -150%;z-index: 1;transition: all 0.35s ease;}
+.picWords-style-4 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-4 p.tit2{opacity: 0;color:#6c5ce7;right: -100%;left: auto;text-align: right;}
+.picWords-style-4 a:hover:before{opacity: 0.7;right: -85%;}
+.picWords-style-4 a:hover p.tit1{opacity: 0;}
+.picWords-style-4 a:hover p.tit2{opacity: 1;right:20px;transition:0.6s ease-in;}
+.picWords-style-4 a:hover img{transform: scale(1.2);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-5">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#05：底部飞入</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-5{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-5 a:before,.picWords-style-5 a:after{content: '';background: linear-gradient( #000dff 0%,#6b73ff 100%);height: 150%;width: 100%;opacity: 0;position: absolute;top: 100%;z-index: 1;transition: .5s ease-out;}
+.picWords-style-5 a:before{border-radius: 0 100% 0 0;left: -50%;}
+.picWords-style-5 a:after{border-radius: 100% 0 0 0;left: 50%;}
+.picWords-style-5 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-5 p.tit2{opacity: 0;color:#fff;top:50%;}
+.picWords-style-5 a:hover:before{top: -50%;opacity: 0.7;border-radius: 0 35% 0 0;}
+.picWords-style-5 a:hover:after{top: -50%;opacity: 0.7;border-radius: 35% 0 0 0;}
+.picWords-style-5 a:hover p.tit1{opacity: 0;}
+.picWords-style-5 a:hover p.tit2{opacity: 1;top: 45%;transition:0.4s ease-in;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-6">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#06：左侧飞入</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-6{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-6 a:before{content: "";opacity:0;position: absolute;top: 10%;left: 10%;height: 80%;width: 80%;background: rgba(255,255,255,0.6);transform: translateX(-100%);transition: all .5s cubic-bezier(0.5,3,0.5,0);z-index: 1;}
+.picWords-style-6 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-6 p.tit2{opacity: 0;color:#6c5ce7;top:55%;}
+.picWords-style-6 a:hover:before{transform: translateX(0);opacity:1;}
+.picWords-style-6 a:hover p.tit1{opacity: 0;}
+.picWords-style-6 a:hover p.tit2{opacity: 1;top:45%;transition:0.6s ease-in;}
+.picWords-style-6 a:hover img{transform: scale(1.2);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-7">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#07：纵向翻转</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-7{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-7 a:before{content: "";opacity:0;position: absolute;top: 0;left:0;height: 100%;width: 100%;background: rgba(255,255,255,0.6);transform: rotateX(90deg);transition: all .5s;z-index: 1;}
+.picWords-style-7 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-7 p.tit2{opacity: 0;color:#6c5ce7;top:55%;}
+.picWords-style-7 a:hover:before{transform:rotateX(0deg);opacity:1;}
+.picWords-style-7 a:hover p.tit1{opacity: 0;}
+.picWords-style-7 a:hover p.tit2{opacity: 1;top:45%;transition:0.6s ease-in;}
+.picWords-style-7 a:hover img{transform: scale(1.2);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-8">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#08：旋转放大</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-8{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.picWords-style-8 a:before{content: '';background: rgba(255,255,255,0.6);height: 100%;width: 100%;opacity: 0;transform: scale(1) rotate(180deg);position: absolute;left: 0;top: 0;z-index: 1;transition: 0.5s cubic-bezier(0.5,3,0.5,0);}
+.picWords-style-8 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-8 p.tit2{opacity: 0;transform: scale(3);color:#6c5ce7;}
+.picWords-style-8 a:hover:before{opacity: 1;transform: scale(0.9) rotate(0);}
+.picWords-style-8 a:hover p.tit1{opacity: 0;}
+.picWords-style-8 a:hover p.tit2{opacity: 1;transform: scale(1);transition:0.6s ease-in;}
+.picWords-style-8 a:hover img{transform: scale(1.9) rotate(45deg);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-9">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#09：悬停遮罩</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-9{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-9:before,.picWords-style-9:after,.picWords-style-9 a:before,.picWords-style-9 a:after{content: '';background: linear-gradient(transparent,rgba(0,0,0,0.9));height: 100%;width: 25%;transform: translateY(-100%);position: absolute;left: 0;top: 0;z-index: 1;transition: all 0.3s;}
+.picWords-style-9:after{left: 75%;}
+.picWords-style-9 a:before{left: 25%;}
+.picWords-style-9 a:after{left: 50%;}
+.picWords-style-9 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-9 p.tit2{opacity: 0;color:#fff;top:55%;}
+.picWords-style-9:hover:before, .picWords-style-9:hover:after, .picWords-style-9:hover a:before, .picWords-style-9:hover a:after{transform: translateY(0);}
+.picWords-style-9:hover:before{transition-delay: 0.225s;}
+.picWords-style-9:hover:after{transition-delay: 0.15s;}
+.picWords-style-9 a:hover:before{transition-delay: 0.075s;}
+.picWords-style-9 a:hover p.tit1{opacity: 0;}
+.picWords-style-9 a:hover p.tit2{opacity: 1;top: 45%;transition:0.4s ease-in;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-10">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#10：弹性抖动</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-10{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-10 a:before{content: '';background-color: rgba(255,255,255,0.7);opacity: 0;position: absolute;left: 0;right: 0;bottom: 0;top: 0;z-index: 1;transition: all 0.3s cubic-bezier(0.5,3,0.5,0) 0.1s;}
+.picWords-style-10 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-10 p.tit2{opacity: 0;color:#6c5ce7;top:-100%;}
+.picWords-style-10 a:hover:before{left: 15px;right: 15px;bottom: 15px;top: 15px;opacity: 1;}
+.picWords-style-10 a:hover p.tit1{opacity: 0;}
+.picWords-style-10 a:hover p.tit2{opacity: 1;top:45%;transition:0.6s ease-in;}
+.picWords-style-10 a:hover img{transform: scale(1.2);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-11">
+    <a target="_blank" href="#">
+        <img class="trans03s" src="images/img-1.jpg">
+        <p class="tit1">HIGH QUALITY</p>
+        <p class="tit2">HIGH QUALITY</p>
+    </a>
+</div>
+<p class="demoTit"><span>#11：动感霓虹灯</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-11{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.picWords-style-11 a:before{content: '';background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);position: absolute;top:0;right: -300px;bottom: -300px;left: 0;opacity:0;transition: .5s all;}
+.picWords-style-11 p{width: 100%;position: absolute;left: 0;top: 45%;text-align: center;font-size: 24px;font-weight: 700;color:#fff;z-index: 2;}
+.picWords-style-11 p.tit2{opacity: 0;color:#fff;top:-100%;}
+.picWords-style-11 a:hover:before{top: -300px;right: 0;bottom: 0;left:  -300px;opacity: 1;}
+.picWords-style-11 a:hover p.tit1{opacity: 0;}
+.picWords-style-11 a:hover p.tit2{opacity: 1;top:45%;transition:0.6s ease-in;}
+.picWords-style-11 a:hover img{opacity: 0.6;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+</ul>
+
+
+            <h3>更多效果展示</h3>
+<ul style="overflow: hidden;">
+<li class="fl">
+<div class="picWords-style-12">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="bg trans03s"><div class="hoverBg trans03s"></div></div>
+        <div class="detail trans03s">
+            <p class="title"> Motor Grader</p>
+            <p class="desc">INTERIOR / MODEL / DESIGN</p>
+            <div class="btn">Read More</div>
+        </div>
+    </a>
+</div>
+<p class="demoTit"><span>#12</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-12{width: 300px;height: 380px;position: relative;overflow: hidden;display: block;}
+.picWords-style-12 img{width: 100%;height: 100%;display: block;}
+.picWords-style-12 .bg{width: 100%;height: 150px;position: absolute;bottom: -50px;left: 0;opacity: .8;background: #fff;}
+.picWords-style-12 .bg .hoverBg{width: 100%;height: 100%;opacity: 0;background: #ffac28;}
+.picWords-style-12 .detail{width: 100%;height: 150px;position: absolute;left: 0;bottom: -50px;padding-left:35px;overflow: hidden;}
+.picWords-style-12 .title{margin-top:30px;color: #262626;line-height: 25px;height: 25px;font-size: 20px;font-weight: 500;overflow: hidden;}
+.picWords-style-12 .desc{margin-top: 5px;color: #262626;line-height: 22px;height: 22px;font-size: 13px;overflow: hidden;}
+.picWords-style-12 .btn{margin-top: 20px;display: inline-block;height: 25px;padding: 0 10px;line-height: 25px;color: #fff;background: #262626;}
+.picWords-style-12 a:hover .bg{bottom:0;opacity: 1;}
+.picWords-style-12 a:hover .bg .hoverBg{opacity: 1;}
+.picWords-style-12 a:hover .detail{bottom:0;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+<li class="fl">
+<div class="picWords-style-13">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="detail trans05s">
+            <div class="bg"></div>
+            <div class="info">
+                <div class="title">Motor Grader</div>
+                <div class="line trans05s"></div>
+                <div class="btn">Read More</div>
+            </div>
+        </div>
+    </a>
+</div>
+<p class="demoTit"><span>#13</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-13{width: 300px;height: 380px;position: relative;overflow: hidden;}
+.picWords-style-13 img{width: 100%;height: 100%;display: block;}
+.picWords-style-13 .detail{width:100%;height:70px;text-align: center;position: absolute;bottom:0;}
+.picWords-style-13 .detail .bg{width:100%;height:100%;background: rgba(0,0,0,.6);position: absolute;top:0;bottom: 0;}
+.picWords-style-13 .detail .info{width:100%;}
+.picWords-style-13 .detail .title{font-size: 24px;height: 70px;line-height: 70px;overflow: hidden;color: #fff;font-weight: 700;position: relative;}
+.picWords-style-13 .detail .line{margin: 10px auto 0;width:0px;height:1px;background: #fff; position: relative;}
+.picWords-style-13 .detail .btn{margin-top: 30px;display: inline-block;height: 30px;padding: 0 30px;line-height: 30px;color: #000;background: #fff;position: relative;}
+.picWords-style-13 a:hover .detail{height:280px;padding-top:100px;}
+.picWords-style-13 a:hover .detail .line{width: 100px;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-14">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="detail trans05s">
+            <div class="bg"></div>                                    
+            <p>Xx products to home products, such as home textiles, kitchen appliances, next year will also increase the production of mother and child, China's traditional original ecological diet</p>
+            <div class="btn">Read More</div>
+        </div>
+        <div class="title">Motor Grader</div>
+    </a>
+</div>
+<p class="demoTit"><span>#14</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-14{width: 300px;height: 380px;position: relative;overflow: hidden;}
+.picWords-style-14 img{width: 100%;height: 100%;display: block;}
+.picWords-style-14 .title{width:100%;font-size: 24px;height: 70px;line-height: 70px;color: #fff;font-weight: 700;text-align:center;position: absolute;bottom:0;background: rgba(248,203,0,0.9)}
+.picWords-style-14 .detail{width:100%;height:100%;position: absolute;top:100%;opacity: 0;}
+.picWords-style-14 .detail .bg{width:100%;height:100%;background: rgba(0,0,0,.6);position: absolute;top:0;bottom: 0;}
+.picWords-style-14 .detail p{padding:50px 30px 30px;color: #fff;font-size: 14px;line-height: 24px;overflow: hidden;position: relative;}
+.picWords-style-14 .detail .btn{padding-left:30px;color: #f8cb00;font-size: 14px;position: relative;}
+.picWords-style-14 a:hover .detail{top:0;opacity: 1;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-15">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="bg trans05s"></div>  
+        <div class="title trans03s">Motor Grader</div>
+        <div class="ms trans03s">Architecture,Interior Design</div>
+    </a>
+</div>
+<p class="demoTit"><span>#15</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-15{width: 300px;height: 380px;position: relative;overflow: hidden;display: block;}
+.picWords-style-15 img{width: 100%;height: 100%;display: block;}
+.picWords-style-15 .bg{width: 100%;height: 100%;position: absolute;bottom: 0px;left: 0;opacity:0.1;background: #000;}
+.picWords-style-15 .title{color: #fff;font-size: 20px;font-weight: 500;position: absolute;left:30px;bottom: 90px;}
+.picWords-style-15 .ms{color: #fff;font-size: 14px;position: absolute;left:30px;bottom: 50px;}
+.picWords-style-15 a:hover .bg{opacity: 0.7;}
+.picWords-style-15 a:hover .title,.picWords-style-15:hover .ms{transform: translateY(-100px);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-16">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="detailTop trans05s">
+            <div class="bg"></div>  
+            <div class="title">Motor Grader</div>
+            <div class="ms">Architecture,Interior Design</div> 
+        </div>
+        <div class="detailBottom trans05s">
+            <div class="bg"></div>  
+            <div class="btn">Read More</div>
+        </div>
+    </a>
+</div>
+<p class="demoTit"><span>#16</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-16{width: 300px;height: 380px;position: relative;overflow: hidden;display: block;}
+.picWords-style-16 img{width: 100%;height: 100%;display: block;}
+.picWords-style-16 .detailTop{width: 100%;height: 50%;position: absolute;top:-50%;left: 0;text-align: center;}
+.picWords-style-16 .detailTop .title{width:100%;color: #fff;font-size: 20px;font-weight: 500;position: absolute;left:0;bottom: 45px;}
+.picWords-style-16 .detailTop .ms{width:100%;height:30px;line-height:30px;color: #fff;font-size: 14px;position: absolute;left:0px;bottom: 10px;overflow: hidden;}
+.picWords-style-16 .detailBottom{width: 100%;height: 50%;position: absolute;bottom:-50%;left: 0;text-align: center;}
+.picWords-style-16 .detailBottom .btn{margin-top: 10px;display: inline-block;height: 30px;padding: 0 30px;line-height: 30px;color: #000;background: #fff;position: relative;}
+.picWords-style-16 .bg{width: 100%;height: 100%;position: absolute;top:0;bottom: 0px;left: 0;opacity:0.4;background: #000;}
+.picWords-style-16 a:hover .detailTop{top:0;}
+.picWords-style-16 a:hover .detailBottom{bottom:0;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-17">
+    <a target="_blank" href="#">
+        <img class="trans05s" src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="detail trans05s">
+            <div class="info">
+                <p class="title"> Motor Grader</p>
+                <p class="desc">INTERIOR / MODEL / DESIGN</p>
+                <div class="btn">Read More</div>
+            </div>
+        </div>
+    </a>
+</div>
+<p class="demoTit"><span>#17</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-17{width: 300px;height: 380px;position: relative;overflow: hidden;display: block;}
+.picWords-style-17 img{width: 100%;height: 100%;display: block;position: relative;z-index: 1;}
+.picWords-style-17 .detail{width: 100%;height: 100%;position: absolute;left: 0;top: 0;display: flex;align-items: center;background: #ffac28;transform: rotateY(-180deg);z-index: 0;}
+.picWords-style-17 .detail .info{width: 100%;text-align: center;}
+.picWords-style-17 .title{color: #262626;line-height: 25px;height: 25px;font-size: 20px;font-weight: 500;overflow: hidden;}
+.picWords-style-17 .desc{margin-top: 5px;color: #262626;line-height: 22px;height: 22px;font-size: 13px;overflow: hidden;}
+.picWords-style-17 .btn{margin-top: 20px;display: inline-block;height: 25px;padding: 0 10px;line-height: 25px;color: #fff;background: #262626;}
+.picWords-style-17 a:hover img{transform: rotateY(-180deg);opacity: 0;}
+.picWords-style-17 a:hover .detail{transform: rotateY(0deg);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-18">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="bg trans03s"></div>  
+        <div class="title trans03s">Motor Grader</div>
+        <div class="msBox trans03s">
+            <p class="ms">Xx products to home products, such as home textiles, kitchen appliances, next year will also increase the production of mother and child, China's traditional original ecological diet</p>
+        </div>
+        <div class="btnBox trans03s"><div class="btn">Read More</div></div>
+    </a>
+</div>
+<p class="demoTit"><span>#18</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-18{width: 300px;height: 380px;position: relative;overflow: hidden;}
+.picWords-style-18 img{width: 100%;height: 100%;display: block;}
+.picWords-style-18 .bg{width:100%;height:100%;background:#000;opacity:0.3;position: absolute;top:0;bottom: 0;}
+.picWords-style-18 .title{font-size: 24px;height: 50px;line-height: 50px;color: #fff;font-weight: 700;border-bottom:1px solid #fff;position: absolute;bottom:40px;left:30px;}
+.picWords-style-18 .msBox{width: 100%;height: 55%;position: absolute;left:0;top:-55%;}
+.picWords-style-18 .ms{padding:20px;color: #fff;font-size: 14px;line-height: 24px;overflow: hidden;position: absolute;bottom:0;}
+.picWords-style-18 .btnBox{width: 100%;height: 45%;position: absolute;left:0;bottom:-45%;text-align: center;}
+.picWords-style-18 .btn{margin-top: 20px;display: inline-block;height: 30px;padding: 0 30px;line-height: 30px;color: #000;background: #fff;}
+.picWords-style-18 a:hover .bg{opacity: 0.7;}
+.picWords-style-18 a:hover .title{opacity: 0;transform:translateX(-300px);}
+.picWords-style-18 a:hover .msBox{top: 0;}
+.picWords-style-18 a:hover .btnBox{bottom: 0;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<div class="picWords-style-19">
+    <a target="_blank" href="#">
+        <img src="https://sc02.alicdn.com/kf/H18d1d67d33e84a468df22c58a269cbbfE.jpg">
+        <div class="detail trans05s">
+            <div class="bg trans05s"></div>
+            <div class="info trans2s">
+                <p class="title"> Motor Grader</p>
+                <p class="desc">INTERIOR / MODEL / DESIGN</p>
+                <div class="btn">Read More</div>
+            </div>
+        </div>
+    </a>
+</div>
+<p class="demoTit"><span>#19</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.picWords-style-19{width: 300px;height: 380px;position: relative;overflow: hidden;display: block;}
+.picWords-style-19 img{width: 100%;height: 100%;display: block;;}
+.picWords-style-19 .detail{width: 100%;height: 100%;position: absolute;left: 0;top: -100%;display: flex;align-items: center;}
+.picWords-style-19 .detail .bg{width:100%;height:100%;background:#ffac28;opacity:0.3;position: absolute;top:0;bottom: 0;}
+.picWords-style-19 .detail .info{width: 100%;text-align: center;transform:translateY(-50px);opacity: 0;}
+.picWords-style-19 .title{color: #262626;line-height: 25px;height: 25px;font-size: 20px;font-weight: 500;overflow: hidden;}
+.picWords-style-19 .desc{margin-top: 5px;color: #262626;line-height: 22px;height: 22px;font-size: 13px;overflow: hidden;}
+.picWords-style-19 .btn{margin-top: 20px;display: inline-block;height: 25px;padding: 0 10px;line-height: 25px;color: #fff;background: #262626;}
+.picWords-style-19 a:hover .detail{top:0;}
+.picWords-style-19 a:hover .detail .bg{opacity:0.7;}
+.picWords-style-19 a:hover .detail .info{transform:translateY(0px);opacity: 1;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+
+</ul>
+        </div>
+    </div>
+
+     <script type="text/javascript">
+        $(function(){
+            $(".viewCode").click(function() {
+                var html = $(this).parent().siblings(":first").prop('outerHTML');
+                // var css = $(this).parent().siblings(".reveal-modal").children("pre").prop('outerHTML').replace(/\ +/g,"");
+                $(this).parent().siblings(".reveal-modal").children("xmp").html(html);
+            })
+        })
+    </script>
+</body>
+
+</html>

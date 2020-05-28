@@ -1,0 +1,85 @@
+﻿
+<!DOCTYPE html>
+<html style="min-width:1240px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noarchive">
+    <meta name="robots" content="all">
+    <title>Work</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/css.css">
+    <script type="text/javascript" src="https://www.cnzoom.com/statics/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="../images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+           
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="nav"></div>
+
+        <div class="container">
+            <h1>Aliexpress模板汇总</h1>
+            <div class="card">
+                <ul class="muban"></ul>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    $(function(){
+        var template=[
+            {"image":"https://img.alicdn.com/top/i1/TB18VqzqQL0gK0jSZFASuwA9pXa","pcId":1021,"wxId":1047},
+            {"image":"https://img.alicdn.com/top/i1/TB1ONGAqUT1gK0jSZFrSuwNCXXa","pcId":1022,"wxId":1025},
+            {"image":"https://img.alicdn.com/top/i1/TB1otU.qFY7gK0jSZKzSuuikpXa","pcId":1031,"wxId":1036},
+            {"image":"https://img.alicdn.com/top/i1/TB1roRaq9f2gK0jSZFPSutsopXa","pcId":1046,"wxId":1049},
+            {"image":"https://img.alicdn.com/top/i1/TB1pbuzqHH1gK0jSZFwSuw7aXXa","pcId":1038,"wxId":1039},
+            {"image":"https://img.alicdn.com/top/i1/TB1EKauqLb2gK0jSZK9SuuEgFXa","pcId":1045,"wxId":1070},
+
+            {"image":"https://img.alicdn.com/top/i1/TB1UMpdq4v1gK0jSZFFSuv0sXXa","pcId":1068,"wxId":1116},
+            {"image":"https://img.alicdn.com/top/i1/TB11NiBqUz1gK0jSZLeSuv9kVXa","pcId":1033,"wxId":1035},
+            {"image":"https://img.alicdn.com/top/i1/TB1FMeDqHr1gK0jSZR0SuvP8XXa","pcId":1069,"wxId":1111},
+            {"image":"https://img.alicdn.com/top/i1/TB1rZ9BqFT7gK0jSZFpSuuTkpXa","pcId":1024,"wxId":1027},
+            {"image":"https://img.alicdn.com/top/i1/TB1REuAqUY1gK0jSZFMSuuWcVXa","pcId":1037,"wxId":1042},
+            {"image":"https://img.alicdn.com/top/i1/TB1i4eHqG61gK0jSZFlSutDKFXa","pcId":1119,"wxId":1145},
+
+            {"image":"https://img.alicdn.com/top/i1/TB1_.qzqQY2gK0jSZFgSuw5OFXa","pcId":1695,"wxId":1860},
+            {"image":"https://img.alicdn.com/top/i1/TB1d6JXq4D1gK0jSZFsSuvldVXa","pcId":1120,"wxId":1147},
+            {"image":"https://img.alicdn.com/top/i1/TB1cjOCqO_1gK0jSZFqSuwpaXXa","pcId":1576,"wxId":1475},
+            {"image":"https://img.alicdn.com/top/i1/TB1zEJeq1H2gK0jSZJnSuuT1FXa","pcId":1152,"wxId":1179},
+            {"image":"https://img.alicdn.com/top/i1/TB1eDCxqFY7gK0jSZKzSuuikpXa","pcId":1601,"wxId":1666},
+            {"image":"https://img.alicdn.com/top/i1/TB193F0qF67gK0jSZPfSuuhhFXa","pcId":1538,"wxId":1574},
+
+            {"image":"https://img.alicdn.com/top/i1/TB107CyqHr1gK0jSZR0SuvP8XXa","pcId":1880,"wxId":1909},
+            {"image":"https://img.alicdn.com/top/i1/TB1E_5zqFP7gK0jSZFjSuw5aXXa","pcId":1611,"wxId":1668},
+            {"image":"https://img.alicdn.com/top/i1/TB1bjizqND1gK0jSZFsSuvldVXa","pcId":1793,"wxId":1859},
+            {"image":"https://img.alicdn.com/top/i1/TB1c0uYroY1gK0jSZFCSuwwqXXa","pcId":1923,"wxId":1960},
+            {"image":"https://img.alicdn.com/top/i1/TB1.51zqUH1gK0jSZSySuttlpXa","pcId":1696,"wxId":1758},
+			{"image":"https://img.alicdn.com/top/i1/TB1dXOetGL7gK0jSZFBSutZZpXa","pcId":2130,"wxId":2583},
+
+        ];
+        var html="";
+        $.each(template, function(k,val) {
+            html+='<li>'+
+                    '<a target="_blank" href="https://decoration.aliexpress.com/detail.html?code=AEZX_'+template[k].pcId+'"><img src="'+template[k].image+'"></a>'+
+                    '<div class="number">No.'+ k +'</div>'+
+                    '<p>'+
+                        '<a href="https://decoration.aliexpress.com/detail.html?code=AEZX_'+template[k].pcId+'" target="_blank">PC链接</a>'+
+                        '<a href="https://decoration.aliexpress.com/detail.html?code=AEZX_'+template[k].wxId+'" target="_blank">无线链接</a>'+
+                    '</p>'+
+                '</li>'
+        });
+        $(".muban").append(html);
+    })
+</script>
+
+</body>
+</html>
