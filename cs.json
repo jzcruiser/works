@@ -1,0 +1,453 @@
+{
+  "width": 1200,
+  "height": 1945,
+  "bgImg": "",
+  "bgImgSize": "",
+  "bgColor": "rgb(255, 255, 255)",
+  "app": [
+    {
+      "appName": "文字",
+      "appType": "apwx_jwz",
+      "config": {
+        "text": "请双击编辑文本内容",
+        "color": "#000000",
+        "bgColor": "rgba(113, 113, 113, 0.5)",
+        "fontSize": "30",
+        "href": "",
+        "align": "center",
+        "bgImg": "https://img.alicdn.com/imgextra/i2/1867852664/O1CN01N9F68K1VY9cXmYTha_!!1867852664.png",
+        "bgImg_align": "",
+        "fontWeight": "bold",
+        "textDecoration": "line-through",
+        "borderWidth": "1",
+        "borderColor": "#000000",
+        "borderRadius": "10",
+        "appID": 1612489422687,
+        "lineHeight": "34",
+        "paddingLR": "16",
+        "bgImg_width": 100,
+        "bgImg_height": 100
+      },
+      "pos": "317|56|824|762"
+    },
+    {
+      "appName": "图片",
+      "appType": "apwx_jtup",
+      "config": {
+        "pSrc": "https://img.alicdn.com/imgextra/i3/800803731/O1CN01hkMu0B1dQqHKAOHDv_!!800803731.jpg",
+        "width": "750",
+        "height": "400",
+        "href": "",
+        "appID": 1612489494127,
+        "borderRadius": "20"
+      },
+      "pos": "402|213|4|781"
+    },
+    {
+      "appName": "倒计时",
+      "appType": "apwx_jdjs",
+      "config": {
+        "startTime": "2021-02-11 14:00:00",
+        "endTime": "2021-02-14 14:00:00",
+        "bgImg": "https://img.alicdn.com/imgextra/i2/800803731/O1CN01Pvy8WF1dQqHLTiome_!!800803731.jpg",
+        "bgImg_width": "750",
+        "bgImg_height": "230",
+        "bgColor": "#ffffff",
+        "customContent_1": "",
+        "customContent_2": "",
+        "customContent_3": "",
+        "appID": 1612489509785,
+        "rotate_d": "-36",
+        "rotate_h": "-36",
+        "rotate_m": "-36",
+        "rotate_s": "-36"
+      },
+      "pos": "762|241|0|0",
+      "child_data": [
+        {
+          "width": 53,
+          "height": 55,
+          "left": 167,
+          "top": 113,
+          "type": "d",
+          "visibility": "visible",
+          "style": {
+            "font-size": "48px",
+            "color": "rgb(255, 255, 255)",
+            "font-weight": "400",
+            "text-decoration": "none solid rgb(69, 69, 69)",
+            "text-align": "center",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "",
+            "line-height": "normal"
+          }
+        },
+        {
+          "width": 53,
+          "height": 55,
+          "left": 292,
+          "top": 113,
+          "type": "h",
+          "visibility": "visible",
+          "style": {
+            "font-size": "48px",
+            "color": "rgb(255, 255, 255)",
+            "font-weight": "400",
+            "text-decoration": "none solid rgb(69, 69, 69)",
+            "text-align": "center",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "",
+            "line-height": "normal"
+          }
+        },
+        {
+          "width": 53,
+          "height": 55,
+          "left": 415,
+          "top": 113,
+          "type": "m",
+          "visibility": "visible",
+          "style": {
+            "font-size": "48px",
+            "color": "rgb(255, 255, 255)",
+            "font-weight": "400",
+            "text-decoration": "none solid rgb(69, 69, 69)",
+            "text-align": "center",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "",
+            "line-height": "normal"
+          }
+        },
+        {
+          "width": 53,
+          "height": 55,
+          "left": 540,
+          "top": 113,
+          "type": "s",
+          "visibility": "visible",
+          "style": {
+            "font-size": "48px",
+            "color": "rgb(255, 255, 255)",
+            "font-weight": "400",
+            "text-decoration": "none solid rgb(69, 69, 69)",
+            "text-align": "center",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "",
+            "line-height": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "appName": "轮播",
+      "appType": "apwx_jnbo",
+      "config": {
+        "slider": [
+          {
+            "img": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01viVoKP1dQqHCejiKk_!!800803731.jpg",
+            "href": "",
+            "customContent": "",
+            "show": 1,
+            "img_width": 750,
+            "img_height": 500
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i1/800803731/O1CN0112530o1dQqHKQasFt_!!800803731.jpg",
+            "href": "",
+            "customContent": "",
+            "show": 1,
+            "img_width": 750,
+            "img_height": 500
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i2/800803731/O1CN01A0AQxD1dQqHIPm93B_!!800803731.jpg",
+            "href": "",
+            "customContent": "",
+            "show": 1,
+            "img_width": 750,
+            "img_height": 500
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i1/800803731/O1CN01y1YVg61dQqHMaSW3p_!!800803731.jpg",
+            "href": "",
+            "customContent": "",
+            "show": 1,
+            "img_width": 750,
+            "img_height": 500
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i3/800803731/O1CN01WTLb481dQqHN6Y2x8_!!800803731.jpg",
+            "href": "",
+            "customContent": "",
+            "show": 1,
+            "img_width": 750,
+            "img_height": 500
+          }
+        ],
+        "PagStyle_obj": [
+          { "style": { "bgColor": "rgba(71, 69, 69, 0.5)" } },
+          {
+            "content": ["1", "2", "3", "4", "5"],
+            "style": {
+              "width": 120,
+              "height": 24,
+              "color": "#000000",
+              "bgColor": "#f9f9f9",
+              "fontSize": 16,
+              "left": 8,
+              "top": 25,
+              "borderRadius": 0,
+              "partial": 0,
+              "select_color": "#ffffff",
+              "select_bgColor": "#f60f60",
+              "pag_bgColor": "#ffffff",
+              "pagSrc": "",
+              "pagSrc_width": 0,
+              "pagSrc_height": 0
+            }
+          },
+          {
+            "content": [
+              {
+                "default": "https://img.alicdn.com/imgextra/i2/800803731/O1CN01QkPpW91dQqHICiMoo_!!800803731.jpg",
+                "select": "https://img.alicdn.com/imgextra/i1/800803731/O1CN01brlKbr1dQqHKGnISf_!!800803731.jpg"
+              },
+              {
+                "default": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01hNBUEI1dQqHL9MDSI_!!800803731.jpg",
+                "select": "https://img.alicdn.com/imgextra/i2/800803731/O1CN01MuJjXO1dQqHMaSv0s_!!800803731.jpg"
+              },
+              {
+                "default": "https://img.alicdn.com/imgextra/i2/800803731/O1CN015ob4vs1dQqHLerA1W_!!800803731.jpg",
+                "select": "https://img.alicdn.com/imgextra/i1/800803731/O1CN01rGPddz1dQqHIClFZa_!!800803731.jpg"
+              },
+              {
+                "default": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01PPqBwo1dQqHMaSW4W_!!800803731.jpg",
+                "select": "https://img.alicdn.com/imgextra/i3/800803731/O1CN01pxGiCE1dQqHHEsJbZ_!!800803731.jpg"
+              },
+              {
+                "default": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01uPFPKG1dQqHNa37zz_!!800803731.jpg",
+                "select": "https://img.alicdn.com/imgextra/i1/800803731/O1CN01L127es1dQqHKGqRvj_!!800803731.jpg"
+              }
+            ],
+            "style": {
+              "width": 130,
+              "height": 300,
+              "left": 0,
+              "top": 0,
+              "partial": 50,
+              "pag_bgColor": "#ffffff",
+              "pagSrc": "",
+              "pagSrc_width": 0,
+              "pagSrc_height": 0
+            }
+          }
+        ],
+        "PagPos_obj": [
+          { "width": 750, "height": 300, "left": 0, "top": 500 },
+          { "width": 138, "height": 360, "left": 0, "top": 0 },
+          { "width": 138, "height": 360, "left": 550, "top": 0 },
+          { "width": 750, "height": 40, "left": 0, "top": 0 },
+          { "width": 750, "height": 40, "left": 0, "top": 300 }
+        ],
+        "PagStyle": 2,
+        "PagPos": 0,
+        "bgColor": "rgba(255, 255, 255, 0)",
+        "showsPagination": "true",
+        "autoPlay": "true",
+        "autoPlayInterval": 3000,
+        "loop": "true",
+        "page_color_select": "rgb(255, 80, 0)",
+        "prev_next": {
+          "show": "true",
+          "prev_pSrc": "https://img.alicdn.com/imgextra/i4/1867852664/O1CN01FzDVbS1VY9dz5iCXR_!!1867852664.png",
+          "next_pSrc": "https://img.alicdn.com/imgextra/i4/1867852664/O1CN01MT5VTI1VY9dwO0XSl_!!1867852664.png",
+          "prev_width": 48,
+          "prev_height": 48,
+          "next_width": 48,
+          "next_height": 48
+        },
+        "children_kcdh": true,
+        "appID": 1612489543472
+      },
+      "pos": "702|468|231|6",
+      "child_data": [
+        {
+          "width": 690,
+          "height": 276,
+          "left": 4,
+          "top": 468,
+          "type": "pagination",
+          "visibility": "visible",
+          "style": {}
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "left": 19,
+          "top": 231,
+          "visibility": "visible",
+          "style": {},
+          "type_extend": "prev"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "left": 639,
+          "top": 231,
+          "visibility": "visible",
+          "style": {},
+          "type_extend": "next"
+        }
+      ]
+    },
+    {
+      "appName": "开场动画",
+      "appType": "apwx_jkcdh",
+      "config": {
+        "pSrc": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01tUovCX1dQqGWY9a3p_!!800803731.png",
+        "pSrc_width": "750",
+        "pSrc_height": "220",
+        "pSrc_href": "",
+        "show": "1",
+        "customContent": "",
+        "translate_type": "1",
+        "translate": "X",
+        "opacity": "0|1",
+        "timingFunction": "ease",
+        "translate_Xpx": "750",
+        "translate_Ypx": "0",
+        "transform_scale": "scale(1, 1)",
+        "transform_rotate": "rotate(0deg)",
+        "duration": "1000",
+        "delay": "0",
+        "appID": 1612489573847
+      },
+      "pos": "440|129|665|732"
+    },
+    {
+      "appName": "多图滑动",
+      "appType": "apwx_jdtuhd",
+      "config": {
+        "slider": [
+          {
+            "img": "https://img.alicdn.com/imgextra/i4/800803731/O1CN014gIYes1dQqH5RyX8u_!!800803731.jpg",
+            "href": "",
+            "img_width": 625,
+            "img_height": 520
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i4/800803731/O1CN01hKsXxR1dQqH3mgRWW_!!800803731.jpg",
+            "href": "",
+            "img_width": 625,
+            "img_height": 520
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i3/800803731/O1CN01bcXmSZ1dQqH5tAp0S_!!800803731.jpg",
+            "href": "",
+            "img_width": 625,
+            "img_height": 520
+          }
+        ],
+        "slider_right": 0,
+        "customContent": "",
+        "show": "1",
+        "PagStyle": 1,
+        "bgColor": "#f9f9f9",
+        "showsPagination": "true",
+        "page_width": "60",
+        "page_height": "8",
+        "page_width_select": "80",
+        "page_height_select": 16,
+        "page_radius": 0,
+        "page_margin": 6,
+        "page_wz_color": "#333333",
+        "page_wz_color_select": "#333333",
+        "page_wz_size": "20",
+        "page_color": "rgba(195, 195, 195, 0.5)",
+        "page_color_select": "#484848",
+        "appID": 1612489583564
+      },
+      "pos": "1191|495|976|-4",
+      "child_data": [
+        {
+          "width": 571,
+          "height": 46,
+          "left": 10,
+          "top": 430,
+          "type": "pagination",
+          "visibility": "visible",
+          "style": {}
+        }
+      ]
+    },
+    {
+      "appName": "动图切换",
+      "appType": "apwx_jtgif",
+      "config": {
+        "slider": [
+          {
+            "img": "https://img.alicdn.com/imgextra/i3/1867852664/O1CN01A8zLVH1VY9ecCHCZW_!!1867852664.jpg",
+            "href": "-1",
+            "img_width": 750,
+            "img_height": 560
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i1/1867852664/O1CN01SdqAEg1VY9eZ3E7A2_!!1867852664.jpg",
+            "href": "-1",
+            "img_width": 750,
+            "img_height": 560
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i3/1867852664/O1CN01ezhc8B1VY9eYAVCzI_!!1867852664.jpg",
+            "href": "-1",
+            "img_width": 750,
+            "img_height": 560
+          },
+          {
+            "img": "https://img.alicdn.com/imgextra/i4/1867852664/O1CN01TG2vEE1VY9eaz2bw4_!!1867852664.jpg",
+            "href": "-1",
+            "img_width": 750,
+            "img_height": 560
+          }
+        ],
+        "href": "",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "customContent": "",
+        "show": "1",
+        "translate_type": "1",
+        "translate": "X",
+        "opacity": "1|1",
+        "timingFunction": "ease",
+        "translate_Xpx": "0",
+        "translate_Ypx": "0",
+        "transform_scale": "scale(1, 1)",
+        "transform_rotate": "rotate(0deg)",
+        "duration": "0",
+        "delay": "500",
+        "slider_change": "1",
+        "appID": 1612489611690
+      },
+      "pos": "751|462|1471|10"
+    },
+    {
+      "appName": "视频",
+      "appType": "apwx_jsp",
+      "config": {
+        "id": "220992156923",
+        "width": "",
+        "height": "",
+        "videoSrc": "https://cloud.video.taobao.com//play/u/1867852664/p/2/e/6/t/1/220992156923.mp4",
+        "videoPoster": "",
+        "autoPlay": "video_true_auto",
+        "videoLoop": "",
+        "stopShowPoster": "",
+        "videoControls": "",
+        "videoMuted": "",
+        "autoRotate": "",
+        "appID": 1612763625190
+      },
+      "pos": "377|212|1507|781"
+    }
+  ],
+  "appLinks": []
+}

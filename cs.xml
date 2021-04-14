@@ -1,0 +1,103 @@
+<view class="womu_g25" style="{{!!bgImg && bgImg.style}}" data-spmd="{{spmd+0}}" catchTap="handleDataUrl" data-url="{{!!bgImg && bgImg.mkBgLink}}">
+  <view style="marginTop:{{bgImg.marginTop==0?24:bgImg.marginTop}}rpx;position:relative;">
+    <!-- 切换导航 -->
+    <scroll-view class="nav-list" scroll-left="{{scrollLeft}}" style="width:{{navInfo.navTitleWidth}}rpx;height:{{navInfo.dotHeight}}rpx;" scroll-x="{{true}}" scroll-with-animation="{{true}}" scroll-animation-duration="{{300}}" catchTouchStart="handleStopPop" catchTouchMove="handleStopPop" catchTouchEnd="handleStopPop">
+      <view class="nav-flexBgBox">
+        <view class="nav" style="{{navInfo.navDefBgStyle}}{{navInfo.navTitleStyle}}" a:for="{{navInfo.navTitle}}" a:for-item="navItem" key="{{index}}">
+        </view>
+      </view>
+      <view style="{{navInfo.navActBgStyle}}left:{{activeIndex*navInfo.realDotWidth}}px;position:absolute;transition:all 0.3s linear;borderRadius:24rpx 24rpx 0 0;display:flex;justify-content:center;{{navInfo.navTitleStyle}}">
+      </view>
+      <view class="nav-flexTextBox">
+        <view class="nav" style="{{activeIndex==index?navInfo.navActColorStyle:navInfo.navDefColorStyle}}{{navInfo.navTitleStyle}}transition:all 0.3s linear;" data-current="{{index}}" a:for="{{navInfo.navTitle}}" catchTap="currentChange" a:for-item="navItem" key="{{index}}">
+          <text>{{navItem}}</text>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="item-cont">
+      <view style="position:relative;{{navInfo.bannerList[0].bannerImgStyle}}">
+        <block a:for="{{result}}" a:for-item="items" a:for-index="idx">
+          <view class="cont-banner {{activeIndex==idx?'banner-select':''}}" data-url="{{navInfo.bannerList[idx].bannerLink}}" style="{{navInfo.bannerList[0].bannerImgStyle}}" data-spmd="{{spmd+idx}}" catchTap="handleDataUrl">
+            <image style="width:666rpx;borderRadius:0 24rpx 24rpx 24rpx;" src="{{navInfo.bannerList[idx].bannerImg.bannerImg}}" mode="widthFix" />
+          </view>
+        </block>
+      </view>
+      <!--<block a:for="{{result}}" a:for-item="items" a:for-index="idx" a:if="{{activeIndex==idx}}"> -->
+      <swiper indicator-dots="{{false}}" autoplay="{{swiper.autoPlay}}" vertical="{{swiper.vertical}}" interval="{{swiper.interval}}" circular="true" duration="{{100}}" onChange="currentChange" current="{{activeIndex}}">
+        <swiper-item a:for="{{result}}" a:for-item="items" a:for-index="idx" key="{{idx}}">
+          <scroll-view key="idx" class="item-list" scroll-x="{{true}}" data-isOne="0" onScroll="handleScroll" catchTouchStart="handleStopPop" catchTouchMove="handleStopPop" catchTouchEnd="handleStopPop">
+            <!-- 左侧图片 -->
+            <image mode="aspectFit" class="left-img {{leftImg.hide0 ? 'left-img-hide' : ''}}" src="{{leftImg.src}}" style="{{leftImg.style}}" a:if="{{leftImg && leftImg.show}}" />
+            <view class="scroll-box" style="flex-wrap: nowrap;">
+              <block a:for="{{result[idx][0]}}" a:for-item="item">
+                <view a:key="{{item.nid||index}}" class="demo-im" data-target="{{`goods0${idx}${index}`}}" onAppear="goodsAppear" onDisappear="goodsDisAppear" style="transition:all 0.5s linear {{index<4?index*120:0}}ms;transform:translateY({{(goods[`goods0${idx}${index}`]=== 'appear'&&activeIndex==idx)?0:100}}rpx);opacity:{{goods[`goods0${idx}${index}`]=== 'appear'?1:0}};width:{{goodsWidth}}rpx;border-radius: {{goodsRadius}}rpx;background-color:{{goodsBg}};marginLeft:{{index==0?0:(goodsWidth<=192?14:18)}}rpx" data-url="{{item.h5Url}}" data-spmd="{{spmd+index}}" data-nid="{{item.nid}}" catchTap="handleDataUrl">
+                  <view class="flex-center-image" style="width:{{goodsWidth}}rpx;height:{{goodsHeight}}rpx;" onAppear="videoAppear" onDisappear="videoDisAppear" data-videoIndex="{{idx+'_'+index}}">
+                    <video a:if="{{activeIndex==idx&&goodsVideoDis&&item.videoUrl}}" id="{{`myVideo${idx+'_'+index}`}}" class="video" src="{{item.videoUrl}}" poster="{{itemPic == 2 && itemInfos.gdInfoList[idx][index] &&itemInfos.gdInfoList[idx][index].image&&itemInfos.gdInfoList[idx][index].image.image ? itemInfos.gdInfoList[idx][index].image.image :item.imgUrl}}" poster-size="cover" object-fit="fill" initial-time="0" controls="{{false}}" autoplay="{{false}}" loop="{{true}}" muted="{{true}}" show-center-play-btn="{{false}}" show-mute-btn="{{false}}" show-play-btn="true" show-fullscreen-btn="true" show-thin-progress-bar="{{false}}" enable-progress-gesture="true" mobilenet-hint-type="1" />
+                    <image a:else class="demo-image" src="{{itemPic == 2 && itemInfos.gdInfoList[idx][index] &&itemInfos.gdInfoList[idx][index].image&&itemInfos.gdInfoList[idx][index].image.image ? itemInfos.gdInfoList[idx][index].image.image :item.imgUrl}}" mode="aspectFill" />
+                  </view>
+                  <view a:if="{{goodsTitleDis||goodsPriceDis||goodsOldPriceDis||goodsBtnDis||goodsSaleDis}}" class="item-data" style="text-align:{{textAlign}};margin-top:{{goodsWidth<=256?10:12}}rpx;margin-bottom:{{goodsWidth<=256?18:20}}rpx;">
+                    <text class="item-title" a:if="{{goodsTitleDis}}" style="color:{{goodsTitleC}};font-size:{{goodsWidth<=256?24:26}}rpx;font-weight:{{goodsTitleW}};height:{{goodsTitleLines*30}}rpx" number-of-lines="{{goodsTitleLines}}">{{itemPic == 2 && itemInfos.gdInfoList[idx][index] &&itemInfos.gdInfoList[idx][index].title ? itemInfos.gdInfoList[idx][index].title :item.title}}</text>
+                    <view class="info_box" style="flex-direction:row;">
+                      <view class="item-price-box" a:if="{{goodsPriceDis}}">
+                        <view class="item-price" style="color:{{goodsPriceC}};margin-right:{{goodsOldPriceDis&&item.reservePrice?10:0}}rpx;">
+                          <text style="font-size:{{goodsWidth<=256?18:24}}rpx;font-weight:700;">{{goodsPriceQz}}</text>
+                          <text style="font-size:{{goodsWidth<=256?28:34}}rpx;font-weight:700;">{{item.priceYuan}}</text>
+                          <text style="font-size:{{goodsWidth<=256?18:24}}rpx;font-weight:700;">{{goodsPriceXs?"."+item.priceFen:""}}</text>
+                          <text style="font-size:{{goodsWidth<=256?16:20}}rpx;font-weight:700;">{{goodsPriceHz}}</text>
+                        </view>
+                        <view class="item-price" a:if="{{goodsOldPriceDis&&item.reservePrice}}">
+                          <text class="item-oldPrice-y" style="color:{{goodsOldPriceC}};font-size: {{goodsWidth<=256?20:24}}rpx;">￥{{item.reservePrice}}</text>
+                        </view>
+                      </view>
+                      <view class="flex-center-btn" style="margin-top:8rpx;{{sizeStyle.goodsBtnImgStyle}}" a:if="{{goodsBtnDis}}">
+                        <image style="width:100%;" src="{{sizeStyle.goodsBtnImg}}" mode="widthFix" />
+                      </view>
+                    </view>
+                    <text class="item-sale" a:if="{{goodsSaleDis&&item.sold30daysQuantity}}" style="color:{{goodsSaleC}};font-size:{{goodsWidth<=256?20:24}}rpx;" number-of-lines="1">已售{{item.sold30daysQuantity}}</text>
+                  </view>
+                </view>
+              </block>
+            </view>
+          </scroll-view>
+          <scroll-view key="idx" a:if="{{goodLines==2}}" class="item-list" scroll-x="{{true}}" data-isOne="1" onScroll="handleScroll" catchTouchStart="handleStopPop" catchTouchMove="handleStopPop" catchTouchEnd="handleStopPop">
+            <!-- 左侧图片 -->
+            <image mode="aspectFit" class="left-img {{leftImg.hide1 ? 'left-img-hide' : ''}}" src="{{leftImg.src}}" style="{{leftImg.style}}" a:if="{{leftImg && leftImg.show}}" />
+            <view class="scroll-box" style="flex-wrap: nowrap;">
+              <block a:for="{{result[idx][1]}}" a:for-item="item">
+                <view a:key="{{item.nid||index}}" class="demo-im" style="width:{{goodsWidth}}rpx;border-radius: {{goodsRadius}}rpx;background-color:{{goodsBg}};marginLeft:{{index==0?0:(goodsWidth<=192?14:18)}}rpx" data-url="{{item.h5Url}}" data-spmd="{{spmd+index}}" data-nid="{{item.nid}}" catchTap="handleDataUrl">
+                  <view class="flex-center-image" style="width:{{goodsWidth}}rpx;height:{{goodsHeight}}rpx;" onAppear="videoAppear" onDisappear="videoDisAppear" data-videoIndex="{{idx+'_'+index}}">
+                    <video a:if="{{activeIndex==idx&&goodsVideoDis&&item.videoUrl}}" id="{{`myVideo${idx+'_'+index}`}}" class="video" src="{{item.videoUrl}}" poster="{{itemPic == 2 && itemInfos.gdInfoList2[idx][index] &&itemInfos.gdInfoList2[idx][index].image&&itemInfos.gdInfoList2[idx][index].image.image ? itemInfos.gdInfoList2[idx][index].image.image :item.imgUrl}}" poster-size="cover" object-fit="fill" initial-time="0" controls="{{false}}" autoplay="{{false}}" loop="{{true}}" muted="{{true}}" show-center-play-btn="{{false}}" show-mute-btn="{{false}}" show-play-btn="true" show-fullscreen-btn="true" show-thin-progress-bar="{{false}}" enable-progress-gesture="true" mobilenet-hint-type="1" />
+                    <image a:else class="demo-image" src="{{itemPic == 2 && itemInfos.gdInfoList2[idx][index] &&itemInfos.gdInfoList2[idx][index].image&&itemInfos.gdInfoList2[idx][index].image.image ? itemInfos.gdInfoList2[idx][index].image.image :item.imgUrl}}" mode="aspectFill" />
+                  </view>
+                  <view a:if="{{goodsTitleDis||goodsPriceDis||goodsOldPriceDis||goodsBtnDis||goodsSaleDis}}" class="item-data" style="text-align:{{textAlign}};margin-top:{{goodsWidth<=256?10:12}}rpx;margin-bottom:{{goodsWidth<=256?18:20}}rpx;">
+                    <text class="item-title" a:if="{{goodsTitleDis}}" style="color:{{goodsTitleC}};font-size:{{goodsWidth<=256?24:26}}rpx;font-weight:{{goodsTitleW}};height:{{goodsTitleLines*30}}rpx" number-of-lines="{{goodsTitleLines}}">{{itemPic == 2 && itemInfos.gdInfoList2[idx][index] &&itemInfos.gdInfoList2[idx][index].title ? itemInfos.gdInfoList2[idx][index].title :item.title}}</text>
+                    <view class="info_box" style="flex-direction:row;">
+                      <view class="item-price-box" a:if="{{goodsPriceDis}}">
+                        <view class="item-price" style="color:{{goodsPriceC}};margin-right:{{goodsOldPriceDis&&item.reservePrice?10:0}}rpx;">
+                          <text style="font-size:{{goodsWidth<=256?18:24}}rpx;font-weight:700;">{{goodsPriceQz}}</text>
+                          <text style="font-size:{{goodsWidth<=256?28:34}}rpx;font-weight:700;">{{item.priceYuan}}</text>
+                          <text style="font-size:{{goodsWidth<=256?18:24}}rpx;font-weight:700;">{{goodsPriceXs?"."+item.priceFen:""}}</text>
+                          <text style="font-size:{{goodsWidth<=256?16:20}}rpx;font-weight:700;">{{goodsPriceHz}}</text>
+                        </view>
+                        <view class="item-price" a:if="{{goodsOldPriceDis&&item.reservePrice}}">
+                          <text class="item-oldPrice-y" style="color:{{goodsOldPriceC}};font-size: {{goodsWidth<=256?20:24}}rpx;">￥{{item.reservePrice}}</text>
+                        </view>
+                      </view>
+                      <view class="flex-center-btn" style="margin-top:8rpx;{{sizeStyle.goodsBtnImgStyle}}" a:if="{{goodsBtnDis}}">
+                        <image style="width:100%;" src="{{sizeStyle.goodsBtnImg}}" mode="widthFix" />
+                      </view>
+                    </view>
+                    <text class="item-sale" a:if="{{goodsSaleDis&&item.sold30daysQuantity}}" style="color:{{goodsSaleC}};font-size:{{goodsWidth<=256?20:24}}rpx;" number-of-lines="1">已售{{item.sold30daysQuantity}}</text>
+                  </view>
+                </view>
+              </block>
+            </view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+      <!--</block> -->
+    </view>
+  </view>
+  <!-- 动图 -->
+  <image a:if="{{!!Dt && Dt.dtDis}}" class="dt{{Dt.dtEffect}} abs" data-spmd="{{spmd+99}}" catchTap="handleDataUrl" data-url="{{Dt.dtLink}}" src="{{Dt.dtImg.dtImg}}" style="{{Dt.style}}" mode="aspectFill" />
+</view>
