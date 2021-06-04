@@ -154,7 +154,7 @@
       "extension": {
         "defaultValue": true,
         "useReg": false,
-        "placeholder": "New products"
+        "placeholder": "Hot products"
       },
       "validateProps": {
         "dataType": "",
@@ -162,7 +162,7 @@
         "validate": false
       }
     },
-    "1557280350967_1": {
+    "1555393553884_1": {
       "type": "SingleImage",
       "dataName": "title_icon",
       "label": {
@@ -392,176 +392,6 @@
         }
       ]
     },
-    "1555485394388_1": {
-      "type": "Select",
-      "dataName": "gd_margin",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品横向/竖向间距"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": "20",
-        "placeholder": "",
-        "dataSource": [
-          {
-            "label": "0",
-            "value": "0"
-          },
-          {
-            "label": "5",
-            "value": "5"
-          },
-          {
-            "label": "10",
-            "value": "10"
-          },
-          {
-            "label": "15",
-            "value": "15"
-          },
-          {
-            "label": "20",
-            "value": "20"
-          }
-        ]
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1555485394388_2": {
-      "type": "Select",
-      "dataName": "gd_border",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品边框宽度"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": "0",
-        "placeholder": "",
-        "dataSource": [
-          {
-            "label": "0",
-            "value": "0"
-          },
-          {
-            "label": "1",
-            "value": "1"
-          },
-          {
-            "label": "2",
-            "value": "2"
-          },
-          {
-            "label": "3",
-            "value": "3"
-          },
-          {
-            "label": "4",
-            "value": "4"
-          },
-          {
-            "label": "5",
-            "value": "5"
-          }
-        ]
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1555485394388_3": {
-      "type": "Select",
-      "dataName": "gd_padding",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品图片内间距"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": "0",
-        "placeholder": "",
-        "dataSource": [
-          {
-            "label": "0",
-            "value": "0"
-          },
-          {
-            "label": "1",
-            "value": "1"
-          },
-          {
-            "label": "2",
-            "value": "2"
-          },
-          {
-            "label": "3",
-            "value": "3"
-          },
-          {
-            "label": "4",
-            "value": "4"
-          },
-          {
-            "label": "5",
-            "value": "5"
-          },
-          {
-            "label": "10",
-            "value": "10"
-          },
-          {
-            "label": "15",
-            "value": "15"
-          },
-          {
-            "label": "20",
-            "value": "20"
-          }
-        ]
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
     "1530088968181_1": {
       "type": "Radio",
       "dataName": "gd_pic_dis",
@@ -667,7 +497,7 @@
               "label": {
                 "description": {
                   "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
+                  "desc": "产品图片：宽290，高290"
                 },
                 "title": ""
               },
@@ -716,9 +546,9 @@
                 "validate": false
               }
             },
-            "1530080505358_4": {
+            "1557914931090_1": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
                 "description": {
                   "icon": "text",
@@ -753,7 +583,7 @@
               "children": []
             },
             {
-              "id": "1530080505358_4",
+              "id": "1557914931090_1",
               "root": true,
               "children": []
             }
@@ -832,7 +662,7 @@
               "label": {
                 "description": {
                   "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
+                  "desc": "产品图片：宽290，高290"
                 },
                 "title": ""
               },
@@ -881,9 +711,9 @@
                 "validate": false
               }
             },
-            "1530089264216_3": {
+            "1557914931090_2": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
                 "description": {
                   "icon": "text",
@@ -918,7 +748,7 @@
               "children": []
             },
             {
-              "id": "1530089264216_3",
+              "id": "1557914931090_2",
               "root": true,
               "children": []
             }
@@ -997,7 +827,7 @@
               "label": {
                 "description": {
                   "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
+                  "desc": "产品图片：宽290，高290"
                 },
                 "title": ""
               },
@@ -1046,9 +876,9 @@
                 "validate": false
               }
             },
-            "1530089264216_7": {
+            "1557914931090_3": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
                 "description": {
                   "icon": "text",
@@ -1083,7 +913,7 @@
               "children": []
             },
             {
-              "id": "1530089264216_7",
+              "id": "1557914931090_3",
               "root": true,
               "children": []
             }
@@ -1162,7 +992,7 @@
               "label": {
                 "description": {
                   "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
+                  "desc": "产品图片：宽290，高290"
                 },
                 "title": ""
               },
@@ -1211,9 +1041,9 @@
                 "validate": false
               }
             },
-            "1530089264216_13": {
+            "1557914931090_4": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
                 "description": {
                   "icon": "text",
@@ -1248,7 +1078,7 @@
               "children": []
             },
             {
-              "id": "1530089264216_13",
+              "id": "1557914931090_4",
               "root": true,
               "children": []
             }
@@ -1263,15 +1093,15 @@
         }
       ]
     },
-    "1530089264217_10": {
+    "1620612255854_1": {
       "type": "Array",
       "dataName": "gd_zdy4",
       "label": {
+        "title": "第五组产品",
         "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": "第五组产品"
+          "desc": "",
+          "icon": ""
+        }
       },
       "wrapperStyle": {
         "marginTop": "10px"
@@ -1282,27 +1112,27 @@
       },
       "invisible": false,
       "extension": {
+        "placeholder": "placeholder",
         "defaultValue": true,
-        "useReg": false,
-        "placeholder": "placeholder"
+        "useReg": false
       },
       "validateProps": {
         "min": 1,
         "max": 20,
-        "dataType": "Array",
         "required": false,
+        "dataType": "Array",
         "validate": false
       },
       "components": {
-        "1530089264216_11": {
+        "1620612255854_2": {
           "type": "Map",
           "dataName": "map",
           "label": {
+            "title": "",
             "description": {
-              "icon": "",
-              "desc": ""
-            },
-            "title": ""
+              "desc": "",
+              "icon": ""
+            }
           },
           "wrapperStyle": {},
           "style": {
@@ -1311,25 +1141,25 @@
           },
           "invisible": false,
           "extension": {
+            "placeholder": "placeholder",
             "defaultValue": true,
-            "useReg": false,
-            "placeholder": "placeholder"
+            "useReg": false
           },
           "validateProps": {
-            "dataType": "",
             "required": false,
+            "dataType": "",
             "validate": false
           },
           "components": {
-            "1530089264216_12": {
+            "1620612255854_3": {
               "type": "SingleImage",
               "dataName": "img",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
-                },
-                "title": ""
+                  "desc": "产品图片：宽290，高290",
+                  "icon": "picture"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1341,50 +1171,50 @@
               "invisible": false,
               "extension": {
                 "size": 2,
-                "saveImageSize": false,
                 "api": {
                   "uploadUrl": "/v1/image_upload.do"
                 },
+                "saveImageSize": false,
                 "lang": {
+                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
+                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
+                  "uploadErrMsg": "图片上传失败，请重试",
+                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
                   "cropUploadLocale": {
+                    "file": {
+                      "addPhoto": "上传照片"
+                    },
                     "image": {
                       "cancel": "取消",
                       "addPhoto": "上传照片"
                     },
-                    "file": {
-                      "addPhoto": "上传照片"
+                    "crop": {
+                      "title": "上传",
+                      "reset": "重新选择",
+                      "save": "保存并关闭"
                     },
                     "drag": {
-                      "dropTips": "可以放手了",
-                      "dragTips": "直接拖动文件到虚线框内即可上传"
-                    },
-                    "crop": {
-                      "save": "保存并关闭",
-                      "reset": "重新选择",
-                      "title": "上传"
+                      "dragTips": "直接拖动文件到虚线框内即可上传",
+                      "dropTips": "可以放手了"
                     }
-                  },
-                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
-                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
-                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
-                  "uploadErrMsg": "图片上传失败，请重试"
+                  }
                 }
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             },
-            "1530089264216_13": {
+            "1620612255854_4": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "text",
-                  "desc": "产品标题"
-                },
-                "title": ""
+                  "desc": "产品标题",
+                  "icon": "text"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1395,25 +1225,25 @@
               },
               "invisible": false,
               "extension": {
+                "placeholder": "",
                 "defaultValue": true,
-                "useReg": false,
-                "placeholder": ""
+                "useReg": false
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             }
           },
           "layout": [
             {
-              "id": "1530089264216_12",
+              "id": "1620612255854_3",
               "root": true,
               "children": []
             },
             {
-              "id": "1530089264216_13",
+              "id": "1620612255854_4",
               "root": true,
               "children": []
             }
@@ -1422,21 +1252,21 @@
       },
       "layout": [
         {
-          "id": "1530089264216_11",
+          "id": "1620612255854_2",
           "root": true,
           "children": []
         }
       ]
     },
-    "1530089264218_10": {
+    "1620612255855_1": {
       "type": "Array",
       "dataName": "gd_zdy5",
       "label": {
+        "title": "第六组产品",
         "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": "第六组产品"
+          "desc": "",
+          "icon": ""
+        }
       },
       "wrapperStyle": {
         "marginTop": "10px"
@@ -1447,27 +1277,27 @@
       },
       "invisible": false,
       "extension": {
+        "placeholder": "placeholder",
         "defaultValue": true,
-        "useReg": false,
-        "placeholder": "placeholder"
+        "useReg": false
       },
       "validateProps": {
         "min": 1,
         "max": 20,
-        "dataType": "Array",
         "required": false,
+        "dataType": "Array",
         "validate": false
       },
       "components": {
-        "1530089264216_11": {
+        "1620612255854_2": {
           "type": "Map",
           "dataName": "map",
           "label": {
+            "title": "",
             "description": {
-              "icon": "",
-              "desc": ""
-            },
-            "title": ""
+              "desc": "",
+              "icon": ""
+            }
           },
           "wrapperStyle": {},
           "style": {
@@ -1476,25 +1306,25 @@
           },
           "invisible": false,
           "extension": {
+            "placeholder": "placeholder",
             "defaultValue": true,
-            "useReg": false,
-            "placeholder": "placeholder"
+            "useReg": false
           },
           "validateProps": {
-            "dataType": "",
             "required": false,
+            "dataType": "",
             "validate": false
           },
           "components": {
-            "1530089264216_12": {
+            "1620612255854_3": {
               "type": "SingleImage",
               "dataName": "img",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
-                },
-                "title": ""
+                  "desc": "产品图片：宽290，高290",
+                  "icon": "picture"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1506,50 +1336,50 @@
               "invisible": false,
               "extension": {
                 "size": 2,
-                "saveImageSize": false,
                 "api": {
                   "uploadUrl": "/v1/image_upload.do"
                 },
+                "saveImageSize": false,
                 "lang": {
+                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
+                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
+                  "uploadErrMsg": "图片上传失败，请重试",
+                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
                   "cropUploadLocale": {
+                    "file": {
+                      "addPhoto": "上传照片"
+                    },
                     "image": {
                       "cancel": "取消",
                       "addPhoto": "上传照片"
                     },
-                    "file": {
-                      "addPhoto": "上传照片"
+                    "crop": {
+                      "title": "上传",
+                      "reset": "重新选择",
+                      "save": "保存并关闭"
                     },
                     "drag": {
-                      "dropTips": "可以放手了",
-                      "dragTips": "直接拖动文件到虚线框内即可上传"
-                    },
-                    "crop": {
-                      "save": "保存并关闭",
-                      "reset": "重新选择",
-                      "title": "上传"
+                      "dragTips": "直接拖动文件到虚线框内即可上传",
+                      "dropTips": "可以放手了"
                     }
-                  },
-                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
-                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
-                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
-                  "uploadErrMsg": "图片上传失败，请重试"
+                  }
                 }
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             },
-            "1530089264216_13": {
+            "1620612255854_4": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "text",
-                  "desc": "产品标题"
-                },
-                "title": ""
+                  "desc": "产品标题",
+                  "icon": "text"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1560,25 +1390,25 @@
               },
               "invisible": false,
               "extension": {
+                "placeholder": "",
                 "defaultValue": true,
-                "useReg": false,
-                "placeholder": ""
+                "useReg": false
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             }
           },
           "layout": [
             {
-              "id": "1530089264216_12",
+              "id": "1620612255854_3",
               "root": true,
               "children": []
             },
             {
-              "id": "1530089264216_13",
+              "id": "1620612255854_4",
               "root": true,
               "children": []
             }
@@ -1587,21 +1417,21 @@
       },
       "layout": [
         {
-          "id": "1530089264216_11",
+          "id": "1620612255854_2",
           "root": true,
           "children": []
         }
       ]
     },
-    "1530089264219_10": {
+    "1620612255856_1": {
       "type": "Array",
       "dataName": "gd_zdy6",
       "label": {
+        "title": "第七组产品",
         "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": "第七组产品"
+          "desc": "",
+          "icon": ""
+        }
       },
       "wrapperStyle": {
         "marginTop": "10px"
@@ -1612,27 +1442,27 @@
       },
       "invisible": false,
       "extension": {
+        "placeholder": "placeholder",
         "defaultValue": true,
-        "useReg": false,
-        "placeholder": "placeholder"
+        "useReg": false
       },
       "validateProps": {
         "min": 1,
         "max": 20,
-        "dataType": "Array",
         "required": false,
+        "dataType": "Array",
         "validate": false
       },
       "components": {
-        "1530089264216_11": {
+        "1620612255854_2": {
           "type": "Map",
           "dataName": "map",
           "label": {
+            "title": "",
             "description": {
-              "icon": "",
-              "desc": ""
-            },
-            "title": ""
+              "desc": "",
+              "icon": ""
+            }
           },
           "wrapperStyle": {},
           "style": {
@@ -1641,25 +1471,25 @@
           },
           "invisible": false,
           "extension": {
+            "placeholder": "placeholder",
             "defaultValue": true,
-            "useReg": false,
-            "placeholder": "placeholder"
+            "useReg": false
           },
           "validateProps": {
-            "dataType": "",
             "required": false,
+            "dataType": "",
             "validate": false
           },
           "components": {
-            "1530089264216_12": {
+            "1620612255854_3": {
               "type": "SingleImage",
               "dataName": "img",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
-                },
-                "title": ""
+                  "desc": "产品图片：宽290，高290",
+                  "icon": "picture"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1671,50 +1501,50 @@
               "invisible": false,
               "extension": {
                 "size": 2,
-                "saveImageSize": false,
                 "api": {
                   "uploadUrl": "/v1/image_upload.do"
                 },
+                "saveImageSize": false,
                 "lang": {
+                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
+                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
+                  "uploadErrMsg": "图片上传失败，请重试",
+                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
                   "cropUploadLocale": {
+                    "file": {
+                      "addPhoto": "上传照片"
+                    },
                     "image": {
                       "cancel": "取消",
                       "addPhoto": "上传照片"
                     },
-                    "file": {
-                      "addPhoto": "上传照片"
+                    "crop": {
+                      "title": "上传",
+                      "reset": "重新选择",
+                      "save": "保存并关闭"
                     },
                     "drag": {
-                      "dropTips": "可以放手了",
-                      "dragTips": "直接拖动文件到虚线框内即可上传"
-                    },
-                    "crop": {
-                      "save": "保存并关闭",
-                      "reset": "重新选择",
-                      "title": "上传"
+                      "dragTips": "直接拖动文件到虚线框内即可上传",
+                      "dropTips": "可以放手了"
                     }
-                  },
-                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
-                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
-                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
-                  "uploadErrMsg": "图片上传失败，请重试"
+                  }
                 }
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             },
-            "1530089264216_13": {
+            "1620612255854_4": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "text",
-                  "desc": "产品标题"
-                },
-                "title": ""
+                  "desc": "产品标题",
+                  "icon": "text"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1725,25 +1555,25 @@
               },
               "invisible": false,
               "extension": {
+                "placeholder": "",
                 "defaultValue": true,
-                "useReg": false,
-                "placeholder": ""
+                "useReg": false
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             }
           },
           "layout": [
             {
-              "id": "1530089264216_12",
+              "id": "1620612255854_3",
               "root": true,
               "children": []
             },
             {
-              "id": "1530089264216_13",
+              "id": "1620612255854_4",
               "root": true,
               "children": []
             }
@@ -1752,21 +1582,21 @@
       },
       "layout": [
         {
-          "id": "1530089264216_11",
+          "id": "1620612255854_2",
           "root": true,
           "children": []
         }
       ]
     },
-    "15300892642110_10": {
+    "1620612255857_1": {
       "type": "Array",
       "dataName": "gd_zdy7",
       "label": {
+        "title": "第八组产品",
         "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": "第八组产品"
+          "desc": "",
+          "icon": ""
+        }
       },
       "wrapperStyle": {
         "marginTop": "10px"
@@ -1777,27 +1607,27 @@
       },
       "invisible": false,
       "extension": {
+        "placeholder": "placeholder",
         "defaultValue": true,
-        "useReg": false,
-        "placeholder": "placeholder"
+        "useReg": false
       },
       "validateProps": {
         "min": 1,
         "max": 20,
-        "dataType": "Array",
         "required": false,
+        "dataType": "Array",
         "validate": false
       },
       "components": {
-        "1530089264216_11": {
+        "1620612255854_2": {
           "type": "Map",
           "dataName": "map",
           "label": {
+            "title": "",
             "description": {
-              "icon": "",
-              "desc": ""
-            },
-            "title": ""
+              "desc": "",
+              "icon": ""
+            }
           },
           "wrapperStyle": {},
           "style": {
@@ -1806,25 +1636,25 @@
           },
           "invisible": false,
           "extension": {
+            "placeholder": "placeholder",
             "defaultValue": true,
-            "useReg": false,
-            "placeholder": "placeholder"
+            "useReg": false
           },
           "validateProps": {
-            "dataType": "",
             "required": false,
+            "dataType": "",
             "validate": false
           },
           "components": {
-            "1530089264216_12": {
+            "1620612255854_3": {
               "type": "SingleImage",
               "dataName": "img",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "picture",
-                  "desc": "产品图片：宽300，高300"
-                },
-                "title": ""
+                  "desc": "产品图片：宽290，高290",
+                  "icon": "picture"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1836,50 +1666,50 @@
               "invisible": false,
               "extension": {
                 "size": 2,
-                "saveImageSize": false,
                 "api": {
                   "uploadUrl": "/v1/image_upload.do"
                 },
+                "saveImageSize": false,
                 "lang": {
+                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
+                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
+                  "uploadErrMsg": "图片上传失败，请重试",
+                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
                   "cropUploadLocale": {
+                    "file": {
+                      "addPhoto": "上传照片"
+                    },
                     "image": {
                       "cancel": "取消",
                       "addPhoto": "上传照片"
                     },
-                    "file": {
-                      "addPhoto": "上传照片"
+                    "crop": {
+                      "title": "上传",
+                      "reset": "重新选择",
+                      "save": "保存并关闭"
                     },
                     "drag": {
-                      "dropTips": "可以放手了",
-                      "dragTips": "直接拖动文件到虚线框内即可上传"
-                    },
-                    "crop": {
-                      "save": "保存并关闭",
-                      "reset": "重新选择",
-                      "title": "上传"
+                      "dragTips": "直接拖动文件到虚线框内即可上传",
+                      "dropTips": "可以放手了"
                     }
-                  },
-                  "acceptErrMsg": "不支持该类型的图片，请重新选择",
-                  "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
-                  "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
-                  "uploadErrMsg": "图片上传失败，请重试"
+                  }
                 }
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             },
-            "1530089264216_13": {
+            "1620612255854_4": {
               "type": "Input",
-              "dataName": "title",
+              "dataName": "tit",
               "label": {
+                "title": "",
                 "description": {
-                  "icon": "text",
-                  "desc": "产品标题"
-                },
-                "title": ""
+                  "desc": "产品标题",
+                  "icon": "text"
+                }
               },
               "wrapperStyle": {
                 "marginTop": "10px"
@@ -1890,25 +1720,25 @@
               },
               "invisible": false,
               "extension": {
+                "placeholder": "",
                 "defaultValue": true,
-                "useReg": false,
-                "placeholder": ""
+                "useReg": false
               },
               "validateProps": {
-                "dataType": "",
                 "required": false,
+                "dataType": "",
                 "validate": false
               }
             }
           },
           "layout": [
             {
-              "id": "1530089264216_12",
+              "id": "1620612255854_3",
               "root": true,
               "children": []
             },
             {
-              "id": "1530089264216_13",
+              "id": "1620612255854_4",
               "root": true,
               "children": []
             }
@@ -1917,7 +1747,7 @@
       },
       "layout": [
         {
-          "id": "1530089264216_11",
+          "id": "1620612255854_2",
           "root": true,
           "children": []
         }
@@ -2053,35 +1883,6 @@
         "validate": false
       }
     },
-    "1558340284736_1": {
-      "type": "Input",
-      "dataName": "bg_proc",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品背景颜色值，如#ffffff"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "useReg": false,
-        "placeholder": ""
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
     "1530087504497_1": {
       "type": "Input",
       "dataName": "fl_devbg",
@@ -2111,7 +1912,7 @@
         "validate": false
       }
     },
-    "1557282916684_1": {
+    "1555393303408_1": {
       "type": "Input",
       "dataName": "fl_devbc",
       "label": {
@@ -2198,7 +1999,7 @@
         "validate": false
       }
     },
-    "1557282916684_2": {
+    "1555393303408_2": {
       "type": "Input",
       "dataName": "fl_actbc",
       "label": {
@@ -2256,7 +2057,7 @@
         "validate": false
       }
     },
-    "1620357725988_1": {
+    "1600655846779_1": {
       "type": "SingleImage",
       "dataName": "l_arrow",
       "label": {
@@ -2311,7 +2112,7 @@
         "validate": false
       }
     },
-    "1620357725988_2": {
+    "1600655846779_2": {
       "type": "SingleImage",
       "dataName": "r_arrow",
       "label": {
@@ -2566,148 +2367,7 @@
         "validate": false
       }
     },
-    "1529743646225_1": {
-      "type": "Checkbox",
-      "dataName": "tit_dis",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "text": "显示产品标题"
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1529743646225_2": {
-      "type": "Checkbox",
-      "dataName": "price_dis",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "text": "显示产品价格"
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1529997116454_1": {
-      "type": "Checkbox",
-      "dataName": "btn_dis",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "text": "显示产品按钮"
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1532398218179_1": {
-      "type": "Checkbox",
-      "dataName": "order_dis",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": ""
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "text": "显示最小订购量"
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1526537168952_1": {
-      "type": "Input",
-      "dataName": "gd_bg",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品背景颜色值，如#ffffff"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "useReg": false,
-        "placeholder": ""
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1533276430233_1": {
+    "1527478207182_1": {
       "type": "Input",
       "dataName": "gd_bc",
       "label": {
@@ -2736,13 +2396,13 @@
         "validate": false
       }
     },
-    "1525919174320_1": {
-      "type": "Radio",
-      "dataName": "name_h",
+    "1526541091635_2": {
+      "type": "Input",
+      "dataName": "gd_bg",
       "label": {
         "description": {
           "icon": "",
-          "desc": "产品标题显示行数"
+          "desc": "产品背景颜色值，如#ffffff"
         },
         "title": ""
       },
@@ -2755,29 +2415,17 @@
       },
       "invisible": false,
       "extension": {
-        "confirm": {},
-        "shape": "",
-        "size": "large",
-        "defaultValue": "1",
-        "type": "",
-        "dataSource": [
-          {
-            "label": "显示1行",
-            "value": "1"
-          },
-          {
-            "label": "显示2行",
-            "value": "2"
-          }
-        ]
+        "defaultValue": true,
+        "useReg": false,
+        "placeholder": ""
       },
       "validateProps": {
-        "dataType": "Number",
+        "dataType": "",
         "required": false,
         "validate": false
       }
     },
-    "1521277247307_3": {
+    "1521282718039_4": {
       "type": "Input",
       "dataName": "gd_titc",
       "label": {
@@ -2806,7 +2454,7 @@
         "validate": false
       }
     },
-    "1521277247307_4": {
+    "1521282718039_3": {
       "type": "Input",
       "dataName": "gd_pricec",
       "label": {
@@ -2835,13 +2483,13 @@
         "validate": false
       }
     },
-    "1620273837999_1": {
+    "1558664709090_1": {
       "type": "Input",
-      "dataName": "gd_btnbg",
+      "dataName": "gd_orderc",
       "label": {
         "description": {
           "icon": "",
-          "desc": "产品按钮背景颜色值，如#ffffff"
+          "desc": "产品最小订购量颜色值，如#ffffff"
         },
         "title": ""
       },
@@ -2864,71 +2512,13 @@
         "validate": false
       }
     },
-    "1620273837999_2": {
-      "type": "Input",
-      "dataName": "gd_btnc",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品按钮文字颜色值，如#ffffff"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "useReg": false,
-        "placeholder": ""
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1620273837999_3": {
-      "type": "Input",
-      "dataName": "gd_btntext",
-      "label": {
-        "description": {
-          "icon": "",
-          "desc": "产品按钮文字内容"
-        },
-        "title": ""
-      },
-      "wrapperStyle": {
-        "marginTop": "10px"
-      },
-      "style": {
-        "width": "auto",
-        "height": "auto"
-      },
-      "invisible": false,
-      "extension": {
-        "defaultValue": true,
-        "useReg": false,
-        "placeholder": "Inquire Now"
-      },
-      "validateProps": {
-        "dataType": "",
-        "required": false,
-        "validate": false
-      }
-    },
-    "1620273837999_4": {
+    "1618892030522_1": {
       "type": "SingleImage",
-      "dataName": "gd_btnicon",
+      "dataName": "gd_def_btn",
       "label": {
         "description": {
           "icon": "",
-          "desc": "产品按钮图标：宽28，高28"
+          "desc": "产品默认按钮图片，宽高不限"
         },
         "title": ""
       },
@@ -2977,13 +2567,13 @@
         "validate": false
       }
     },
-    "1532398218179_2": {
-      "type": "Input",
-      "dataName": "gd_orderc",
+    "1618892030522_2": {
+      "type": "SingleImage",
+      "dataName": "gd_act_btn",
       "label": {
         "description": {
           "icon": "",
-          "desc": "产品最小订购量颜色值，如#ffffff"
+          "desc": "产品切换按钮图片，宽高与默认图片一致"
         },
         "title": ""
       },
@@ -2996,9 +2586,35 @@
       },
       "invisible": false,
       "extension": {
-        "defaultValue": true,
-        "useReg": false,
-        "placeholder": ""
+        "size": 2,
+        "saveImageSize": false,
+        "api": {
+          "uploadUrl": "/v1/image_upload.do"
+        },
+        "lang": {
+          "cropUploadLocale": {
+            "image": {
+              "cancel": "取消",
+              "addPhoto": "上传照片"
+            },
+            "file": {
+              "addPhoto": "上传照片"
+            },
+            "drag": {
+              "dropTips": "可以放手了",
+              "dragTips": "直接拖动文件到虚线框内即可上传"
+            },
+            "crop": {
+              "save": "保存并关闭",
+              "reset": "重新选择",
+              "title": "上传"
+            }
+          },
+          "acceptErrMsg": "不支持该类型的图片，请重新选择",
+          "cropSmallError": "您上传的图片超过大小限制，请重新选择图片",
+          "cropRecommend": "您上传的图片高度或者宽度太小，请选择尺寸足够的图片",
+          "uploadErrMsg": "图片上传失败，请重试"
+        }
       },
       "validateProps": {
         "dataType": "",
@@ -3087,7 +2703,7 @@
       "children": []
     },
     {
-      "id": "1557280350967_1",
+      "id": "1555393553884_1",
       "root": true,
       "children": []
     },
@@ -3098,21 +2714,6 @@
     },
     {
       "id": "1530085661157_1",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1555485394388_1",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1555485394388_2",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1555485394388_3",
       "root": true,
       "children": []
     },
@@ -3142,22 +2743,22 @@
       "children": []
     },
     {
-      "id": "1530089264217_10",
+      "id": "1620612255854_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1530089264218_10",
+      "id": "1620612255855_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1530089264219_10",
+      "id": "1620612255856_1",
       "root": true,
       "children": []
     },
     {
-      "id": "15300892642110_10",
+      "id": "1620612255857_1",
       "root": true,
       "children": []
     },
@@ -3182,17 +2783,12 @@
       "children": []
     },
     {
-      "id": "1558340284736_1",
-      "root": true,
-      "children": []
-    },
-    {
       "id": "1530087504497_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1557282916684_1",
+      "id": "1555393303408_1",
       "root": true,
       "children": []
     },
@@ -3207,7 +2803,7 @@
       "children": []
     },
     {
-      "id": "1557282916684_2",
+      "id": "1555393303408_2",
       "root": true,
       "children": []
     },
@@ -3217,12 +2813,12 @@
       "children": []
     },
     {
-      "id": "1620357725988_1",
+      "id": "1600655846779_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1620357725988_2",
+      "id": "1600655846779_2",
       "root": true,
       "children": []
     },
@@ -3252,72 +2848,37 @@
       "children": []
     },
     {
-      "id": "1529743646225_1",
+      "id": "1527478207182_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1529743646225_2",
+      "id": "1526541091635_2",
       "root": true,
       "children": []
     },
     {
-      "id": "1529997116454_1",
+      "id": "1521282718039_4",
       "root": true,
       "children": []
     },
     {
-      "id": "1532398218179_1",
+      "id": "1521282718039_3",
       "root": true,
       "children": []
     },
     {
-      "id": "1526537168952_1",
+      "id": "1558664709090_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1533276430233_1",
+      "id": "1618892030522_1",
       "root": true,
       "children": []
     },
     {
-      "id": "1525919174320_1",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1521277247307_3",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1521277247307_4",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1620273837999_1",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1620273837999_2",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1620273837999_3",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1620273837999_4",
-      "root": true,
-      "children": []
-    },
-    {
-      "id": "1532398218179_2",
+      "id": "1618892030522_2",
       "root": true,
       "children": []
     },
@@ -3364,9 +2925,6 @@
         "1529742502003_1": {
           "invisible": true
         },
-        "1620357725988_2": {
-          "invisible": true
-        },
         "1530087504497_4": {
           "invisible": true
         },
@@ -3376,19 +2934,16 @@
         "1530087504497_3": {
           "invisible": true
         },
-        "1558340284736_1": {
-          "invisible": true
-        },
         "1530087504497_1": {
           "invisible": true
         },
-        "1620357725988_1": {
+        "1557915468557_1": {
           "invisible": true
         },
-        "1557282916684_2": {
+        "1600655846779_2": {
           "invisible": true
         },
-        "1557282916684_1": {
+        "1600655846779_1": {
           "invisible": true
         },
         "1524469236868_3": {
@@ -3400,10 +2955,25 @@
         "1526706692189_1": {
           "invisible": true
         },
+        "1555919148206_3": {
+          "invisible": true
+        },
+        "1555393303408_2": {
+          "invisible": true
+        },
         "1529998007677_3": {
           "invisible": true
         },
+        "1555393303408_1": {
+          "invisible": true
+        },
+        "1555919148206_2": {
+          "invisible": true
+        },
         "1526706692189_3": {
+          "invisible": true
+        },
+        "1555919148206_1": {
           "invisible": true
         }
       },
@@ -3412,100 +2982,65 @@
     {
       "condition": "${moduleData.gd_style}=='2'",
       "components": {
-        "1620273837999_1": {
+        "1555399802514_1": {
           "invisible": true
         },
-        "1620273837999_2": {
+        "1618892030522_1": {
           "invisible": true
         },
-        "1533276430233_1": {
+        "1555062156612_2": {
           "invisible": true
         },
-        "1620273837999_3": {
+        "1526541091635_2": {
           "invisible": true
         },
-        "1620273837999_4": {
+        "1521282718039_3": {
           "invisible": true
         },
-        "1524468417769_2": {
+        "1521282718039_4": {
           "invisible": true
         },
-        "1521277247307_3": {
+        "1600654204120_2": {
           "invisible": true
         },
-        "1521277247307_4": {
+        "1558664709090_1": {
           "invisible": true
         },
-        "1554261851761_2": {
+        "1600654204120_3": {
           "invisible": true
         },
-        "1554261851761_1": {
+        "1600654648444_1": {
           "invisible": true
         },
-        "1529997116454_2": {
+        "1555062156612_1": {
           "invisible": true
         },
-        "1529997116454_1": {
+        "1600654204120_1": {
           "invisible": true
         },
-        "1554261851761_4": {
+        "1618892030522_2": {
           "invisible": true
         },
-        "1554261851761_3": {
+        "1600667219243_1": {
           "invisible": true
         },
-        "1526537168952_1": {
-          "invisible": true
-        },
-        "1524468820944_1": {
-          "invisible": true
-        },
-        "1529743646225_1": {
-          "invisible": true
-        },
-        "1532398218179_1": {
-          "invisible": true
-        },
-        "1529743646225_2": {
-          "invisible": true
-        },
-        "1532398218179_2": {
-          "invisible": true
-        },
-        "1557281922655_1": {
-          "invisible": true
-        },
-        "1525919174320_1": {
-          "invisible": true
-        },
-        "1557281922655_2": {
+        "1527478207182_1": {
           "invisible": true
         }
       },
       "desc": "产品样式"
     },
     {
-      "condition": "${moduleData.hd_imgDis}=='2'",
-      "components": {
-        "1529042839859_1": {
-          "invisible": true
-        },
-        "1529895579953_1": {
-          "invisible": true
-        },
-        "1529894920972_2": {
-          "invisible": true
-        },
-        "1529042839859_2": {
-          "invisible": true
-        }
-      },
-      "desc": "图片标题/背景"
-    },
-    {
+      "desc": "自定义宝贝设置",
       "condition": "${moduleData.gd_pic_dis}=='1'",
       "components": {
+        "1555400079203_4": {
+          "invisible": true
+        },
         "1530089264216_14": {
+          "invisible": true
+        },
+        "1555400079203_5": {
           "invisible": true
         },
         "1521865467053_2": {
@@ -3514,26 +3049,34 @@
         "1530089264216_1": {
           "invisible": true
         },
+        "1555400079203_2": {
+          "invisible": true
+        },
         "1530089264216_5": {
+          "invisible": true
+        },
+        "1555400079203_3": {
           "invisible": true
         },
         "1530089264216_10": {
           "invisible": true
         },
-        "1530089264217_10": {
+        "1555400079203_1": {
           "invisible": true
         },
-        "1530089264218_10": {
+        "1620612255855_1": {
           "invisible": true
         },
-        "1530089264219_10": {
+        "1620612255856_1": {
           "invisible": true
         },
-        "15300892642110_10": {
+        "1620612255857_1": {
+          "invisible": true
+        },
+        "1620612255854_1": {
           "invisible": true
         }
-      },
-      "desc": "自定义宝贝设置"
+      }
     },
     {
       "condition": "${moduleData.tit_style}=='1'",
@@ -3557,11 +3100,11 @@
     ],
     "hd_url": "",
     "name_h": "2",
-    "hd_imgXg": "scroll",
+    "hd_imgXg": "fixed",
     "radio": "1",
     "mk_style": "2",
-    "mk_bgXg": "scroll",
     "paddingBottom": "",
+    "mk_bgXg": "scroll",
     "stitle": "",
     "gd_pricecd": "block",
     "gd_zdy0": [
@@ -3572,10 +3115,10 @@
     "gd_zdy3": [
       ""
     ],
+    "pic_type": "50%",
     "gd_zdy4": [
       ""
     ],
-    "pic_type": "50%",
     "gd_zdy1": [
       ""
     ],
@@ -3593,11 +3136,8 @@
         "title": ""
       }
     ],
-    "gd_margin": "20",
     "mk_titc": "",
-    "order_dis": false,
     "mk_bg": "",
-    "gd_border": "0",
     "hd_imgType": "1",
     "gd_pic4": [
       ""
@@ -3606,11 +3146,11 @@
     "gd_pic1": [
       ""
     ],
-    "items": [
-      ""
-    ],
     "gd_bg": "",
     "gd_pic0": [
+      ""
+    ],
+    "items": [
       ""
     ],
     "gd_pic3": [
@@ -3623,13 +3163,13 @@
     "mk_hdType": "2",
     "price_dis": true,
     "tit_style": "1",
-    "min_dis": false,
     "products": {
       "productIds": [
         60729973253,
         60728381937
       ]
     },
+    "min_dis": true,
     "gd_pricec": "",
     "gd_pic": [
       ""
@@ -3639,15 +3179,14 @@
     "btn_d": true,
     "paddingTop": "",
     "gd_style": "2",
-    "tit_dis": true,
+    "tit_dis": false,
     "hd_imgDis": "1",
     "strategyName": "modifyTimeDesc",
-    "mk_bgDis": "2",
-    "btn_dis": true,
     "mk_bgeffect": "scroll",
+    "btn_dis": true,
+    "mk_bgDis": "1",
     "mk_titc2": "",
     "gd_titcd": "block",
-    "gd_padding": "0",
     "target": "_blank",
     "gd_titd": "block",
     "gd_titc": "",
@@ -3655,6 +3194,15 @@
     "lineNum": "3",
     "btitle": "",
     "item3": [
+      ""
+    ],
+    "gd_zdy5": [
+      ""
+    ],
+    "gd_zdy6": [
+      ""
+    ],
+    "gd_zdy7": [
       ""
     ]
   }
