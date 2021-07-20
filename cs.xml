@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GB2312" ?>
+<?xml version="1.0" encoding="GB2312"?>
 <ui>
   <view>
     <container>
@@ -7,7 +7,7 @@
         <attribute name="width" value="750" />
         <attribute name="backgroundColor" value="#f5f5f5" />
         <attribute name="paddingTop" value="20" />
-        <attribute name="paddingBottom" value="20" />
+        <attribute name="paddingBottom" value="10" />
       </styleBinding>
       <conditions>
         <condition type="!=" left="$mkBg" right="null" executionType="1">
@@ -37,7 +37,7 @@
                 <attribute name="lineHeight" value="40" />
                 <attribute name="fontSize" value="32" />
                 <attribute name="color" value="#333333" />
-                <attribute name="marginTop" value="36" />
+                <attribute name="marginTop" value="30" />
                 <attribute name="fontWeight" value="700" />
               </styleBinding>
               <conditions>
@@ -70,11 +70,237 @@
             </label>
           </subViews>
         </container>
+        <!-- 第1-2个分类 -->
+        <container>
+          <layout type="absoluteLayout" />
+          <styleBinding>
+            <attribute name="width" value="710" />
+            <attribute name="height" value="425" />
+            <attribute name="marginLeft" value="20" />
+            <attribute name="marginTop" value="20" />
+            <attribute name="marginBottom" value="20" />
+          </styleBinding>
+          <subViews>
+            <!-- 第一个图片 -->
+            <container>
+              <layout type="linearLayout" />
+              <styleBinding>
+                <attribute name="width" value="345" />
+                <attribute name="height" value="425" />
+                <attribute name="marginBottom" value="20" />
+              </styleBinding>
+              <subViews>
+                <!-- 图片 -->
+                <image url="https://img.alicdn.com/imgextra/i1/800803731/O1CN01awuFWn1dQqPjlPis6_!!800803731.jpg">
+                  <styleBinding>
+                    <attribute name="width" value="345" />
+                    <attribute name="height" value="425" />
+                  </styleBinding>
+                  <conditions>
+                    <condition type="!=" left="$images0" right="null">
+                      <dataBinding>
+                        <data name="url" value="$images0" />
+                      </dataBinding>
+                    </condition>
+                  </conditions>
+                </image>
+
+                <container>
+                  <layout type="linearLayout" />
+                  <styleBinding>
+                    <attribute name="width" value="300" />
+                    <attribute name="height" value="105" />
+                    <attribute name="backgroundColor" value="#ffffff" />
+                    <attribute name="position" value="absolute" />
+                    <attribute name="bottom" value="30" />
+                    <attribute name="left" value="17" />
+                  </styleBinding>
+                  <conditions>
+                    <condition type="!=" left="$fl_CtBg" right="null">
+                      <styleBinding backgroundColor="$fl_CtBg" />
+                    </condition>
+                  </conditions>
+                  <subViews>
+                    <!-- 图片标题 -->
+                    <label value="Work Uniform" lines="1">
+                      <styleBinding>
+                        <attribute name="width" value="280" />
+                        <attribute name="height" value="40" />
+                        <attribute name="lineHeight" value="40" />
+                        <attribute name="fontSize" value="26" />
+                        <attribute name="fontWeight" value="700" />
+                        <attribute name="textAlign" value="center" />
+                        <attribute name="color" value="#333333" />
+  						<attribute name="marginTop" value="10" />
+  						<attribute name="marginLeft" value="10" />
+                      </styleBinding>
+                      <conditions>
+                        <condition type="!=" left="$images0_tit" right="null" executionType="1">
+                          <dataBinding>
+                            <data name="value" value="$images0_tit" />
+                          </dataBinding>
+                        </condition>
+                        <condition type="!=" left="$titc" right="titc" executionType="1">
+                          <styleBinding color="$titc" />
+                        </condition>
+                      </conditions>
+                    </label>
+                    <!--按钮-->
+                    <image url="https://img.alicdn.com/imgextra/i1/800803731/O1CN01yR5xoF1dQqPhQIQnp_!!800803731.jpg">
+                      <styleBinding>
+                        <attribute name="width" value="123" />
+                        <attribute name="height" value="28" />
+                        <attribute name="marginTop" value="10" />
+  						<attribute name="marginLeft" value="88" />
+                      </styleBinding>
+                      <conditions>
+                        <condition type="!=" left="$fl_btn" right="null">
+                          <dataBinding>
+                            <data name="url" value="$fl_btn" />
+                          </dataBinding>
+                        </condition>
+                      </conditions>
+                    </image>
+                  </subViews>
+                </container>
+
+              </subViews>
+              <events>
+                <event type="click">
+                  <actions>
+                    <userTrack utType="Image" utName="image">
+                      <utParams>
+                        <params>
+                          <param name="wp_app" value="weapp" />
+                          <param name="wp_p" value="$wp_pk" />
+                          <param name="wp_m" value="MODULE_KEY_PLACE_HOLDER" />
+                        </params>
+                      </utParams>
+                    </userTrack>
+                    <openURL url="$url0">
+                      <params>
+                        <param name="wp_app" value="weapp" />
+                        <param name="wp_pk" value="$wp_pk" />
+                        <param name="wp_m" value="MODULE_KEY_PLACE_HOLDER" />
+                      </params>
+                    </openURL>
+                  </actions>
+                </event>
+              </events>
+            </container>
+            <!-- 第二个图片 -->
+            <container>
+              <layout type="linearLayout" />
+              <styleBinding>
+                <attribute name="width" value="345" />
+                <attribute name="height" value="425" />
+                <attribute name="marginLeft" value="365" />
+              </styleBinding>
+              <subViews>
+                <!-- 图片 -->
+                <image url="https://img.alicdn.com/imgextra/i4/800803731/O1CN01sTA0oR1dQqPiryZXc_!!800803731.jpg">
+                  <styleBinding>
+                    <attribute name="width" value="345" />
+                    <attribute name="height" value="425" />
+                  </styleBinding>
+                  <conditions>
+                    <condition type="!=" left="$images0" right="null">
+                      <dataBinding>
+                        <data name="url" value="$images0" />
+                      </dataBinding>
+                    </condition>
+                  </conditions>
+                </image>
+
+                <container>
+                  <layout type="linearLayout" />
+                  <styleBinding>
+                    <attribute name="width" value="300" />
+                    <attribute name="height" value="105" />
+                    <attribute name="backgroundColor" value="#ffffff" />
+                    <attribute name="position" value="absolute" />
+                    <attribute name="bottom" value="30" />
+                    <attribute name="left" value="17" />
+                  </styleBinding>
+                  <conditions>
+                    <condition type="!=" left="$fl_CtBg" right="null">
+                      <styleBinding backgroundColor="$fl_CtBg" />
+                    </condition>
+                  </conditions>
+                  <subViews>
+                    <!-- 图片标题 -->
+                    <label value="Work Uniform" lines="1">
+                      <styleBinding>
+                        <attribute name="width" value="280" />
+                        <attribute name="height" value="40" />
+                        <attribute name="lineHeight" value="40" />
+                        <attribute name="fontSize" value="26" />
+                        <attribute name="fontWeight" value="700" />
+                        <attribute name="textAlign" value="center" />
+                        <attribute name="color" value="#333333" />
+  						<attribute name="marginTop" value="10" />
+  						<attribute name="marginLeft" value="10" />
+                      </styleBinding>
+                      <conditions>
+                        <condition type="!=" left="$images0_tit" right="null" executionType="1">
+                          <dataBinding>
+                            <data name="value" value="$images0_tit" />
+                          </dataBinding>
+                        </condition>
+                        <condition type="!=" left="$titc" right="titc" executionType="1">
+                          <styleBinding color="$titc" />
+                        </condition>
+                      </conditions>
+                    </label>
+                    <!--按钮-->
+                    <image url="https://img.alicdn.com/imgextra/i1/800803731/O1CN01yR5xoF1dQqPhQIQnp_!!800803731.jpg">
+                      <styleBinding>
+                        <attribute name="width" value="123" />
+                        <attribute name="height" value="28" />
+                        <attribute name="marginTop" value="10" />
+  						<attribute name="marginLeft" value="88" />
+                      </styleBinding>
+                      <conditions>
+                        <condition type="!=" left="$fl_btn" right="null">
+                          <dataBinding>
+                            <data name="url" value="$fl_btn" />
+                          </dataBinding>
+                        </condition>
+                      </conditions>
+                    </image>
+                  </subViews>
+                </container>
+
+              </subViews>
+              <events>
+                <event type="click">
+                  <actions>
+                    <userTrack utType="Image" utName="image">
+                      <utParams>
+                        <params>
+                          <param name="wp_app" value="weapp" />
+                          <param name="wp_p" value="$wp_pk" />
+                          <param name="wp_m" value="MODULE_KEY_PLACE_HOLDER" />
+                        </params>
+                      </utParams>
+                    </userTrack>
+                    <openURL url="$url0">
+                      <params>
+                        <param name="wp_app" value="weapp" />
+                        <param name="wp_pk" value="$wp_pk" />
+                        <param name="wp_m" value="MODULE_KEY_PLACE_HOLDER" />
+                      </params>
+                    </openURL>
+                  </actions>
+                </event>
+              </events>
+            </container>
+          </subViews>
+        </container>
         <!-- 1行2列 -->
         <grid gridColumn="2" unScroll="true" needDownRefresh="false" needNextPage="false" dataSource="$images">
           <styleBinding>
             <attribute name="width" value="730" />
-            <attribute name="marginTop" value="20" />
             <attribute name="paddingLeft" value="20" />
           </styleBinding>
           <array value="$images" />
@@ -83,21 +309,15 @@
               <layout type="linearLayout" />
               <styleBinding>
                 <attribute name="width" value="345" />
-                <attribute name="height" value="400" />
+                <attribute name="height" value="230" />
                 <attribute name="marginBottom" value="20" />
-                <attribute name="backgroundColor" value="#ffc293" />
               </styleBinding>
-              <conditions>
-                <condition type="!=" left="$fl_CtBg" right="null">
-                  <styleBinding backgroundColor="$fl_CtBg" />
-                </condition>
-              </conditions>
               <subViews>
-                <!--图片-->
-                <image url="https://img.alicdn.com/imgextra/i4/800803731/O1CN01OXBip11dQqOitmLsW_!!800803731.jpg">
+                <!-- 分类图 -->
+                <image url="https://img.alicdn.com/imgextra/i3/800803731/O1CN01QhGGbX1dQqPfuWYHy_!!800803731.jpg">
                   <styleBinding>
                     <attribute name="width" value="345" />
-                    <attribute name="height" value="310" />
+                    <attribute name="height" value="230" />
                   </styleBinding>
                   <conditions>
                     <condition type="!=" left="$images.[?].img" right="null">
@@ -107,29 +327,37 @@
                     </condition>
                   </conditions>
                 </image>
-                <!-- 大标题 -->
-                <label value="Cosmetic gift box" lines="1">
+                <!-- 图片标题 -->
+                <label value="Fashion Coat" lines="1">
                   <styleBinding>
-                    <attribute name="width" value="345" />
-                    <attribute name="height" value="90" /> 
-                    <attribute name="lineHeight" value="90" />
-                    <attribute name="fontSize" value="32" />
+                    <attribute name="width" value="285" />
+                    <attribute name="height" value="65" />
+                    <attribute name="lineHeight" value="65" />
+                    <attribute name="fontSize" value="30" />
                     <attribute name="fontWeight" value="700" />
-                    <attribute name="color" value="#333333" />
                     <attribute name="textAlign" value="center" />
+                    <attribute name="color" value="#333333" />
+                    <attribute name="position" value="absolute" />
+                    <attribute name="bottom" value="0" />
+                    <attribute name="marginBottom" value="20" />
+                    <attribute name="marginLeft" value="30" />
+                    <attribute name="backgroundColor" value="#ffffff" />
                   </styleBinding>
                   <conditions>
-                    <condition type="!=" left="$images.[?].btit" right="null" executionType="1">
+                    <condition type="!=" left="$images.[?].img_tit" right="null" executionType="1">
                       <dataBinding>
-                        <data name="value" value="$images.[?].btit" />
+                        <data name="value" value="$images.[?].img_tit" />
                       </dataBinding>
                     </condition>
-                    <condition type="!=" left="$fl_btitColor" right="null" executionType="1">
-                      <styleBinding color="$fl_btitColor" />
-                    </condition> 
+                    <condition type="!=" left="$titc" right="titc" executionType="1">
+                      <styleBinding color="$titc" />
+                    </condition>
+                    <condition type="!=" left="$tit_bgc" right="null" executionType="1">
+                      <styleBinding backgroundColor="$tit_bgc" />
+                    </condition>
                   </conditions>
                 </label>
-              </subViews> 
+              </subViews>
               <events>
                 <event type="click">
                   <actions>
@@ -155,8 +383,6 @@
             </container>
           </cell>
         </grid>
-
-
       </subViews>
     </container>
   </view>

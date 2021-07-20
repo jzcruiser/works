@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./cs.js"></script>
-</head>
-<body>
-    
-</body>
-</html>
+            <!--底部背景图-->
+            <image url="https://img.alicdn.com/imgextra/i3/800803731/O1CN01my41Zk1dQqPUB48ec_!!800803731.png">
+                <styleBinding>
+                  <attribute name="width" value="345" />
+                  <attribute name="height" value="480" />
+                </styleBinding>
+                <conditions> 
+                  <condition type="!=" left="$coverImg" right="null">
+                    <dataBinding>
+                      <data name="url" value="$coverImg" />
+                    </dataBinding>
+                  </condition>
+                </conditions>
+              </image>
