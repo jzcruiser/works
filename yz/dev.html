@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+<html style="min-width:1240px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noarchive">
+    <meta name="robots" content="all">
+    <title>Work</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="../css/css.css">
+    <script type="text/javascript" src="https://www.cnzoom.com/statics/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="../js/highlight.min.js"></script>
+    <script src="../js/marked.min.js"></script>
+    <link href="../css/atom-one-dark.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="../images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="nav"></div>
+        <div class="container"><div class="card"></div></div>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        $.get("dev.md", res => {
+        $(".card").html(marked(res));
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
+      })
+    })
+  </script>
+
+</body>
+</html>

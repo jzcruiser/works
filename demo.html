@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE html>
+<html style="min-width:1240px;">
+<head>
+    <meta charset="UTF-8">
+    <title>沃姆设计 工作指南</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="https://www.cnzoom.com/statics/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+           
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="nav"></div>
+
+        <div class="container">
+            <h1>问题汇总</h1>
+            <div class="card">
+                <h3>介绍</h3>
+                <p>Vant 提供了一套默认主题，CSS 命名采用<a href=""> BEM </a>的风格，方便使用者覆盖样式。如果你想完全替换主题色或者其他样式，可以使用下面提供的方法</p>
+            </div>
+
+
+            <div class="card">
+                <h3>特性</h3>
+                <ul class="lists">
+                    <li>60+ 高质量组件</li>
+                    <li>90% 单元测试覆盖率</li>
+                    <li>完善的中英文文档和示例</li>
+                    <li><a href="">支持按需引入</a></li>
+                    <li><a href="">支持主题定制</a></li>
+                    <li>支持国际化</li>
+                    <li>支持 TS</li>
+                    <li>支持 SSR</li>
+                </ul>
+                <blockquote>
+                    <p>提示：目前 Sketch 中部分组件仍为旧版样式，我们正在梳理新版设计规范，尽请期待！</p>
+                </blockquote>
+                <a href="" class="download">下载Sketch</a>
+            </div>
+
+
+            <h2>API</h2>
+            <div class="card">
+                <h3>Props</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>参数</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>默认值</th>
+                            <th>版本</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>type</td>
+                            <td>类型，可选值为 <code>primary</code> <code>info</code> <code>warning</code> <code>danger</code></td>
+                            <td><em>string</em></td>
+                            <td><code>default</code></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>size</td>
+                            <td>尺寸，可选值为 <code>large</code> <code>small</code> <code>mini</code></td>
+                            <td><em>string</em></td>
+                            <td><code>normal</code></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>text</td>
+                            <td>按钮文字</td>
+                            <td><em>string</em></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td>按钮颜色，支持传入<code>linear-gradient</code>渐变色</td>
+                            <td><em>string</em></td>
+                            <td>-</td>
+                            <td>2.1.8</td>
+                        </tr>
+                        <tr>
+                            <td>icon</td>
+                            <td>左侧图标名称或图片链接，可选值见 <a href="#/zh-CN/icon" target="_blank">Icon 组件</a></td>
+                            <td><em>string</em></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>代码演示</h2>
+            <div class="card">
+                <h3>基础用法</h3>
+                <pre>
+                    <code>
+                      //页面加载开始
+                      componentDidMount() {
+                        let emitter = this.props.pageUtils && this.props.pageUtils.pageEmitter;
+                        let pageDisappear = this.props.pageUtils.emitterChannel.PAGE_DISAPPEAR;
+                        let pageAppear = this.props.pageUtils.emitterChannel.PAGE_APPEAR;
+                        if (emitter) {
+                            emitter.on(pageDisappear, this.videoDisappear.bind(null,"video"));
+                            emitter.on(pageAppear, this.videoAppear.bind(null,"video"));
+                        }
+                      }
+                      //页面加载完成
+                      componentWillUnmount() {
+                        let emitter = this.props.pageUtils && this.props.pageUtils.pageEmitter;
+                        let pageDisappear = this.props.pageUtils.emitterChannel.PAGE_DISAPPEAR;
+                        let pageAppear = this.props.pageUtils.emitterChannel.PAGE_APPEAR;
+                        if (emitter) {
+                            emitter.off(pageDisappear, this.videoDisappear.bind(null,"video"));
+                            emitter.off(pageAppear, this.videoAppear.bind(null,"video"));
+                        }
+                      }                       
+                    </code>
+                </pre>               
+            </div>
+
+            <h2>输出文件存放路径</h2>
+            <div class="card">
+                <ul class="files">
+                    <li>
+                        <div class="icon icon0"></div>
+                        <div class="info">
+                            <p class="title">设计师稿素材截图</p>
+                            <p class="path"><span>路径</span><em>2外贸定制\设计资源\定制设计分类整</em></p>
+                            <p class="path"><span>更新</span>小白</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon icon0"></div>
+                        <div class="info">
+                            <p class="title">设计师稿素材截图</p>
+                            <p class="path"><span>路径</span><em>2外贸定制\设计资源\定制设计分类整</em></p>
+                            <p class="path"><span>更新</span>小白</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon icon1"></div>
+                        <div class="info">
+                            <p class="title">设计师稿素材截图</p>
+                            <p class="path"><span>路径</span><a target="_blank" href="">石墨文档</a></p>
+                            <p class="path"><span>更新</span>小白</p>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

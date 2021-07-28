@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<html style="min-width:1240px;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>沃姆设计 阿里国际站 产品列表效果</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/css.css">
+    <link rel="stylesheet" href="./css/itemLists.css">
+    <link rel="stylesheet" href="../../css/reveal.css">    
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.reveal.js"></script> 
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="../../images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1>产品列表效果</h1>
+
+<ul>
+<li class="fl">
+<a class="item_box1 trans03s">
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn">
+            <img class="def_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01Gd5Su91dQqGeQbdAX_!!800803731.png">
+            <img class="act_btn" src="https://img.alicdn.com/imgextra/i1/800803731/O1CN01YPsECA1dQqGiu2lk1_!!800803731.jpg">
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#01</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box1{width: 283px;border:1px solid #eee;background: #fff;display: block;}
+.item_box1 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box1 .pic img{width: 100%;display: block;}
+.item_box1 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;}
+.item_box1 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box1 .detail .title{margin-top: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box1 .detail .price{margin-top: 10px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box1 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box1 .detail .btn{margin-top: 10px;}
+.item_box1 .detail .act_btn{display: none;}
+.item_box1:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box1:hover .detail .def_btn{display: none;}
+.item_box1:hover .detail .act_btn{display: inline-block;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+<li class="fl">
+<a class="item_box2 trans03s">
+    <div class="bg trans01s"></div>
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn">
+            <img class="def_btn" src="https://img.alicdn.com/imgextra/i2/800803731/O1CN01kbPXtw1dQqGlZTRIs_!!800803731.jpg">
+            <img class="act_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01z7nsoK1dQqGjRhVGB_!!800803731.jpg">
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#02</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box2{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;}
+.item_box2 .bg{position: absolute;top:0;right:0;bottom:0;left:0;background: #3791e7;opacity: 0;}
+.item_box2 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box2 .pic img{width: 100%;display: block;}
+.item_box2 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;position: relative;}
+.item_box2 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box2 .detail .title{margin-top: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box2 .detail .price{margin-top: 10px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box2 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box2 .detail .btn{margin-top: 10px;}
+.item_box2 .detail .act_btn{display: none;}
+.item_box2:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box2:hover .bg{opacity: 1;}
+.item_box2:hover .title,.item_box2:hover .price{color: #fff;}
+.item_box2:hover .detail .def_btn{display: none;}
+.item_box2:hover .detail .act_btn{display: inline-block;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box3 trans03s">
+    <div class="pic"><img class="trans03s" src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn">
+            <img class="def_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01Gd5Su91dQqGeQbdAX_!!800803731.png">
+            <img class="act_btn" src="https://img.alicdn.com/imgextra/i1/800803731/O1CN01YPsECA1dQqGiu2lk1_!!800803731.jpg">
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#03</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box3{width: 283px;border:1px solid #eee;background: #fff;display: block;}
+.item_box3 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box3 .pic img{width: 100%;display: block;}
+.item_box3 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;}
+.item_box3 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box3 .detail .title{margin-top: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box3 .detail .price{margin-top: 10px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box3 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box3 .detail .btn{margin-top: 10px;}
+.item_box3 .detail .act_btn{display: none;}
+.item_box3:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box3:hover .pic img{transform: scale(1.05);}
+.item_box3:hover .detail .def_btn{display: none;}
+.item_box3:hover .detail .act_btn{display: inline-block;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box4 trans03s">
+    <div class="pic">
+        <img src="./images/item0.jpg">
+        <p class="title trans03s">Edit Display Product Name Price</p>
+    </div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn">
+            <img class="def_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01Gd5Su91dQqGeQbdAX_!!800803731.png">
+            <img class="act_btn" src="https://img.alicdn.com/imgextra/i1/800803731/O1CN01YPsECA1dQqGiu2lk1_!!800803731.jpg">
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#04</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box4{width: 283px;border:1px solid #eee;background: #fff;display: block;}
+.item_box4 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box4 .pic img{width: 100%;display: block;}
+.item_box4 .pic .title{padding:0 10px;text-align:center;font-size: 15px;height: 35px;line-height: 35px;overflow: hidden;color: #fff;background: rgba(55,145,231,.6);position: absolute;bottom:-35px;left:0;right:0;}
+.item_box4 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;}
+.item_box4 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box4 .detail .price{margin-top: 10px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box4 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box4 .detail .btn{margin-top: 10px;}
+.item_box4 .detail .act_btn{display: none;}
+.item_box4:hover{box-shadow: 0 0 10px #ccc;}
+.item_box4:hover .pic .title{bottom:0;}
+.item_box4:hover .detail .def_btn{display: none;}
+.item_box4:hover .detail .act_btn{display: inline-block;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box5 trans03s">
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+    </div>
+</a>
+<p class="demoTit"><span>#05</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box5{width: 283px;border:1px solid #eee;background: #fff;display: block;}
+.item_box5 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box5 .pic img{width: 100%;display: block;}
+.item_box5 .detail{padding:10px 0 0;overflow: hidden;text-align: center;}
+.item_box5 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box5 .detail .title{margin: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box5 .detail .price{margin-top: 10px;font-size: 20px;height: 40px;line-height: 40px;overflow: hidden;color: #fff;font-weight: 700;background: #333;}
+.item_box5 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box5:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box5:hover .price{background: #3791e7;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+</ul>
+<ul>
+
+<li class="fl">
+<a class="item_box6 trans03s">
+    <div class="pic">
+        <img src="./images/item0.jpg">
+    </div>
+    <div class="detail trans05s">
+        <div class="bg"></div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <p class="title">Edit Display Product Name Price</p>
+        <img class="btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01z7nsoK1dQqGjRhVGB_!!800803731.jpg">
+    </div>
+</a>
+<p class="demoTit"><span>#06</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box6{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;overflow: hidden;}
+.item_box6 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box6 .pic img{width: 100%;display: block;}
+.item_box6 .detail{width:100%;height:50px;text-align: center;position: absolute;bottom:0;float: left;}
+.item_box6 .detail .bg{width:100%;height:100%;background: rgba(55,145,231,.8);position: absolute;top:0;bottom: 0;}
+.item_box6 .detail .price{font-size: 20px;height: 50px;line-height: 50px;overflow: hidden;color: #fff;font-weight: 700;position: relative;}
+.item_box6 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box6 .detail .title{padding:0 10px;font-size: 15px;height: 35px;line-height: 35px;overflow: hidden;color: #fff;position: relative;}
+.item_box6 .detail .btn{display: inline-block; margin-top: 10px;position: relative;}
+.item_box6:hover{box-shadow: 0 0 10px #ccc;}
+.item_box6:hover .detail{height:223px;padding-top: 60px;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+<li class="fl">
+<a class="item_box7 trans03s">
+    <div class="pic">
+        <img class="img" src="./images/item0.jpg">
+        <div class="detail trans05s">
+            <div class="bg"></div>
+            <div class="info">
+                <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+                <div class="order">100 (min.Order)</div>
+                <img class="btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01z7nsoK1dQqGjRhVGB_!!800803731.jpg">
+            </div>
+        </div>
+    </div>
+    <p class="title">Edit Display Product Name Price</p>
+</a>
+<p class="demoTit"><span>#07</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box7{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;overflow: hidden;}
+.item_box7 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box7 .pic .img{width: 100%;display: block;}
+.item_box7 .title{padding:0 10px;font-size: 15px;height: 50px;line-height: 50px;text-align:center;overflow: hidden;background: rgb(55,145,231);color: #fff;position: relative;}
+.item_box7 .detail{width:100%;height:100%;text-align: center;position: absolute;top:0;display: flex;align-items: center;transform: scale(0);}
+.item_box7 .detail .bg{width:100%;height:100%;background: rgba(0,0,0,.8);position: absolute;top:0;bottom: 0;}
+.item_box7 .detail .info{width:100%;position: relative;}
+.item_box7 .detail .price{font-size: 20px;height: 50px;line-height: 50px;overflow: hidden;color: #fff;font-weight: 700;}
+.item_box7 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box7 .detail .order{font-size: 14px;height: 30px;line-height: 30px;overflow: hidden;color: #fff;}
+.item_box7 .detail .btn{display: inline-block; margin-top: 10px;}
+.item_box7:hover{box-shadow: 0 0 10px #ccc;}
+.item_box7 .pic:hover .detail{transform: scale(1);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+<li class="fl">
+<a class="item_box8 trans03s">
+    <div class="pic">
+        <img class="img" src="./images/item0.jpg">
+    </div>
+    <div class="detail trans05s">
+        <p class="title">Edit Display Product Name Price</p>
+        <div class="price">
+            <div class="priceBg trans03s"></div>
+            <p class="trans03s">US $6.0 - 9.0 <span>/ Piece</span></p>
+            <div class="btn">
+                <img src="https://img.alicdn.com/imgextra/i2/2775102988/TB27ys1Ik9WBuNjSspeXXaz5VXa-2775102988.png">
+            </div>
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#08</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box8{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;overflow: hidden;}
+.item_box8 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box8 .pic .img{width: 100%;display: block;}
+.item_box8 .detail{padding:10px;overflow: hidden;}
+.item_box8 .title{font-size: 15px;height: 30px;line-height: 30px;overflow: hidden;color: #666;}
+.item_box8 .detail .price{margin-top:5px;height: 50px;position: relative;}
+.item_box8 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box8 .detail .price .priceBg{width: 0;height: 50px;position: absolute;top:0;left:0;background: #000;}
+.item_box8 .detail .price p{font-size: 20px;height: 50px;line-height: 50px;color: #000;font-weight: 700;position: relative;}
+.item_box8 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box8 .detail .price .btn{width: 70px;height: 50px;background:#3791e7;display: block;position: absolute;right: 0;bottom: 0; }
+.item_box8 .detail .price .btn img{width: 40px;height: 40px;display: block;margin:5px auto;}
+.item_box8:hover{box-shadow: 0 0 10px #ccc;}
+.item_box8:hover .detail .price .priceBg{width: 100%;}
+.item_box8:hover .detail .price p{padding-left:10px;color:#fff;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box9 trans03s">
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="order">100 (min.Order)</div>
+    </div>
+    <div class="line"><div class="trans03s"></div></div>
+</a>
+<p class="demoTit"><span>#09</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box9{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;}
+.item_box9 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box9 .pic img{width: 100%;display: block;}
+.item_box9 .detail{padding:10px 10px 20px;overflow: hidden;}
+.item_box9 .detail .title{margin-top: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box9 .detail .price{margin-top: 15px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box9 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box9 .detail .order{margin-top: 5px;font-size: 14px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box9 .line{width: 100%;height:3px;background: #ccc;position: absolute;bottom: 0;}
+.item_box9 .line div{width: 0;height:3px;background: #3791e7;}
+.item_box9:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box9:hover .line div{width: 100%;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box10 trans03s">
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn trans03s">Inquire Now</div>
+    </div>
+</a>
+<p class="demoTit"><span>#10</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box10{width: 283px;border:1px solid #eee;background: #fff;display: block;}
+.item_box10 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box10 .pic img{width: 100%;display: block;}
+.item_box10 .detail{padding:10px 0;overflow: hidden;text-align: center;}
+.item_box10 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box10 .detail .title{margin: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box10 .detail .price{margin-top: 10px;font-size: 20px;height: 40px;line-height: 40px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box10 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box10 .detail .btn{margin:-40px auto 0;width: 0;height: 40px;background:#3791e7;color: #fff;line-height: 40px;font-size: 15px;text-align: center;position: relative;overflow: hidden;}
+.item_box10:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box10:hover .detail .btn{width: 80%;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+</ul>
+<ul>
+<li class="fl">
+<a class="item_box11 trans03s">
+    <div class="pic"><img src="./images/item0.jpg"></div>
+    <div class="detail">
+        <div class="stars"></div>
+        <div class="title">Edit Display Product Name Price</div>
+        <div class="price">US $6.0 - 9.0 <span>/ Piece</span></div>
+        <div class="btn">
+            <img class="def_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01Gd5Su91dQqGeQbdAX_!!800803731.png">
+            <img class="act_btn" src="https://img.alicdn.com/imgextra/i3/800803731/O1CN01Gd5Su91dQqGeQbdAX_!!800803731.png">
+        </div>
+    </div>
+    <div class="line lineTB trans05s"></div>
+    <div class="line lineLR trans05s"></div>
+</a>
+<p class="demoTit"><span>#11</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box11{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;}
+.item_box11 .pic{width: 100%;height: 283px;overflow: hidden;}
+.item_box11 .pic img{width: 100%;display: block;}
+.item_box11 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;}
+.item_box11 .detail .stars{margin-top:10px;width: 110px;height: 20px;background: url(https://img.alicdn.com/imgextra/i1/800803731/O1CN01Se5r2p1dQqJ1QwtH9_!!800803731.png) repeat-x;display: inline-block;}
+.item_box11 .detail .title{margin-top: 10px;font-size: 15px;height: 20px;line-height: 20px;overflow: hidden;color: #666;}
+.item_box11 .detail .price{margin-top: 10px;font-size: 20px;height: 30px;line-height: 30px;overflow: hidden;color: #333;font-weight: 700;}
+.item_box11 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box11 .detail .btn{margin-top: 10px;}
+.item_box11 .detail .act_btn{display: none;}
+.item_box11 .line{position: absolute;top:0;bottom:0;left: 0;right: 0;}
+.item_box11 .lineTB{border-top:3px solid #ff4083;border-bottom:3px solid #ff4083;transform:scaleX(0);}
+.item_box11 .lineLR{border-left:3px solid #ff4083;border-right:3px solid #ff4083;transform:scaleY(0);}
+.item_box11:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box11:hover .lineTB{transform: scaleX(1);}
+.item_box11:hover .lineLR{transform: scaleY(1);}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+
+<li class="fl">
+<a class="item_box12 trans03s">
+    <div class="pic">
+        <img class="img" src="./images/item0.jpg">
+    </div>
+    <div class="detail trans05s">
+        <p class="title">Edit Display Product Name Price</p>
+        <p class="price">US $6.0 - 9.0 <span>/ Piece</span></p>
+        <div class="orderBtn">
+            <div class="order">100 (min.Order)</div>
+            <div class="btn trans03s">Inquier Now</div>
+        </div>
+    </div>
+</a>
+<p class="demoTit"><span>#12</span> <a class="viewCode" data-animation="fade">查看源码</a></p>
+
+<div class="reveal-modal">
+    <p>html部分:</p>
+    <xmp></xmp>
+    <p>css部分:</p>
+    <pre>
+.item_box12{width: 283px;border:1px solid #eee;background: #fff;display: block;position: relative;overflow: hidden;}
+.item_box12 .pic{width: 100%;height: 283px;overflow: hidden;position: relative;}
+.item_box12 .pic .img{width: 100%;display: block;}
+.item_box12 .detail{padding:10px 10px 20px;overflow: hidden;text-align: center;}
+.item_box12 .title{font-size: 15px;height: 30px;line-height: 30px;overflow: hidden;color: #666;}
+.item_box12 .detail .price{margin-top:10px;font-size: 20px;height: 30px;line-height: 30px;color: #000;font-weight: 700;}
+.item_box12 .detail .price span{font-size: 15px;font-weight: 500;}
+.item_box12 .detail .orderBtn{margin-top:10px;width:100%;height:40px;line-height: 40px;background: #333;border-radius: 50px;position: relative;}
+.item_box12 .detail .order{height:40px;font-size: 15px;text-indent: 20px;text-align:left;overflow: hidden;color: #fff;}
+.item_box12 .detail .btn{width: 110px;height: 40px;background:#3791e7;position: absolute;right: 0;bottom: 0;font-size:14px;color:#fff;border-radius: 50px;}
+.item_box12:hover{transform: translateY(-10px);box-shadow: 0 0 10px #ccc;}
+.item_box12:hover .detail .btn{width:100%;}
+    </pre>
+    <a class="close-reveal-modal">×</a>
+</div>
+</li>
+
+</ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function(){
+        $(".viewCode").click(function() {
+            var html = $(this).parent().siblings(":first").prop('outerHTML');
+            // var css = $(this).parent().siblings(".reveal-modal").children("pre").prop('outerHTML').replace(/\ +/g,"");
+            $(this).parent().siblings(".reveal-modal").children("xmp").html(html);
+        })
+    })
+    </script>
+
+</body>
+
+</html>

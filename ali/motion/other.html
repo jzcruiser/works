@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html style="min-width:1240px;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>沃姆设计 阿里国际站 其他个性效果</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/css.css">
+    <link rel="stylesheet" href="./css/other.css">
+    <link rel="stylesheet" href="../../css/reveal.css">    
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.reveal.js"></script> 
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <img src="../../images/logo.png" />
+                <span>Work Guide</span>
+            </div>
+        </div>
+    </div>
+     <div class="content">
+        <div class="container">
+        <div class="content">
+            <h1>其他个性效果</h1>
+           
+            <h3>1、图片手风琴效果(需要按照外贸模板规则写js部分)</h3>
+            <div class="main">
+                <p class="demoTit"><a class="viewCode" data-animation="fade">查看源码</a></p>
+<div class="mk-bd accordion">
+    <div class="item trans05s hover"><a target="_blank" style="background: url(https://sc01.alicdn.com/kf/HTB1D0Sda.WF3KVjSZPhq6xclXXaf.jpg) no-repeat;"></a></div>
+    <div class="item trans05s"><a target="_blank" style="background: url(https://sc01.alicdn.com/kf/HTB1wDmja8Cw3KVjSZFuq6AAOpXaS.jpg) no-repeat;"></a></div>
+    <div class="item trans05s"><a target="_blank" style="background: url(https://sc02.alicdn.com/kf/HTB1AKKca4iH3KVjSZPfq6xBiVXag.jpg) no-repeat;"></a></div>
+</div>
+                        
+                <div class="reveal-modal">
+                    <p>html部分:</p>
+                    <xmp></xmp>
+                    <p>css部分:</p>
+                    <pre>
+.accordion{width: 1200px;height:560px;}
+.accordion .item{width: 245px;height: 100%;float: left;overflow: hidden;}
+.accordion .item a{width: 100%;height: 100%;display: block;}
+.accordion .hover{width: 710px;}
+                    </pre>
+                    <p>JS部分:</p>
+                    <pre>
+$(".accordion .item").hover(function(event) {
+    $(this).addClass('hover').siblings().removeClass('hover');
+})
+                    </pre>
+                    <a class="close-reveal-modal">×</a>
+                </div>
+            </div>
+
+
+            <h3 style="margin-top:80px;">2、图片轮播效果(需要按照外贸模板规则写js部分)</h3>
+            <div class="main">
+                <p class="demoTit"><a class="viewCode" data-animation="fade">查看源码</a></p>
+<div class="mk-bd slide">
+    <div class="panles">
+        <div class="pic trans03s show" style="background: url(https://sc01.alicdn.com/kf/HTB1H9F4B3KTBuNkSne1q6yJoXXak.jpg) no-repeat center center;"></div>
+        <div class="pic trans03s" style="background: url(https://sc01.alicdn.com/kf/HTB15Q.ZBIyYBuNkSnfoq6AWgVXa1.jpg) no-repeat center center;"></div>
+        <div class="pic trans03s" style="background: url(https://sc01.alicdn.com/kf/HTB1ck_Yc6fguuRjSspkq6xchpXaX.jpg) no-repeat center center;"></div>
+        <div class="pic trans03s" style="background: url(https://sc01.alicdn.com/kf/HTB1MmWxKh9YBuNjy0Ffq6xIsVXaI.jpg) no-repeat center center;"></div>
+        <div class="pic trans03s" style="background: url(https://sc01.alicdn.com/kf/HTB1zF81pLImBKNjSZFlq6A43FXau.jpg) no-repeat center center;"></div>
+    </div>
+    <div class="bg"></div>
+    <div class="panle">
+        <a target="_blank" class="item hover">
+            <div class="info">
+                <div class="line"></div>
+                <p class="title">Fashion Modern</p>
+                <div class="buy"><span class="zm">&gt;</span><span class="fm">&gt;</span></div>
+            </div>
+        </a>
+        <a target="_blank" class="item">
+            <div class="info">
+                <div class="line"></div>
+                <p class="title">Northern New</p>
+                <div class="buy"><span class="zm">&gt;</span><span class="fm">&gt;</span></div>
+            </div>
+        </a>
+        <a target="_blank" class="item">
+            <div class="info">
+                <div class="line"></div>
+                <p class="title">Simple Fashion</p>
+                <div class="buy"><span class="zm">&gt;</span><span class="fm">&gt;</span></div>
+            </div>
+        </a>
+        <a target="_blank" class="item">
+            <div class="info">
+                <div class="line"></div>
+                <p class="title">Extravagant</p>
+                <div class="buy"><span class="zm">&gt;</span><span class="fm">&gt;</span></div>
+            </div>
+        </a>
+        <a target="_blank" class="item">
+            <div class="info">
+                <div class="line"></div>
+                <p class="title">Korean Pastoral</p>
+                <div class="buy"><span class="zm">&gt;</span><span class="fm">&gt;</span></div>
+            </div>
+        </a>        
+    </div>
+</div>
+                        
+                <div class="reveal-modal">
+                    <p>html部分:</p>
+                    <xmp></xmp>
+                    <p>css部分:</p>
+                    <pre>
+.slide{width: 1920px;height:650px;margin-left: -360px;position: relative;}
+.slide .panles{width: 100%;height:100%;position: absolute;}
+.slide .panles .pic{width: 100%;height:100%;position: absolute;opacity: 0;}
+.slide .panles .show{opacity: 1;}
+.slide .bg{background: #000;left: 0;top: 0;width: 100%;height: 100%;opacity: .5;position: absolute;}
+.slide .panle{width: 1200px;height:100%;margin: 0 auto;position: relative;border-right: 1px solid #a9a9a9;}
+.slide .panle .item{border-left: 1px solid #a9a9a9;position: relative;height: 650px;width: 239px;float: left;display: flex;align-items: center;}
+.slide .panle .info{padding-left:39px;overflow: hidden;}
+.slide .panle .line{height: 2px;width: 35px;background-color: #fff;}
+.slide .panle .title{margin-top: 25px;font-size: 16px;color: #fff;}
+.slide .panle .buy{margin-top: 25px;}
+.slide .panle .buy span{display: block;padding: 0 40px;height: 30px;font-size:22px;color: #fff;border: 1px solid #fff;border-radius: 15px;}
+.slide .panle .buy .fm{background-color: #60a795;border-color: #60a795;display: none;}
+.slide .panle .hover .buy .zm{display: none;}
+.slide .panle .hover .buy .fm{display: block;}
+                    </pre>
+                    <p>JS部分:</p>
+                    <pre>
+$(".slide .panle .item").hover(function(event) {
+    $key=$(this).index();
+    $(".slide .panles .pic").eq($key).addClass('show').siblings().removeClass('show');
+    $(this).addClass('hover').siblings().removeClass('hover');
+})
+                    </pre>
+                    <a class="close-reveal-modal">×</a>
+                </div>
+            </div>
+
+
+            <h3 style="margin-top:80px;">3、产品视频展示</h3>
+            <div class="main">
+                <p class="demoTit"><a class="viewCode" data-animation="fade">查看源码</a></p>
+<ul class="mk-bd proVideo">
+    <li>
+        <div class="video">
+            <video src="https://cloud.video.alibaba.com/play/u/2153292369/p/1/e/6/t/1/d/hd/50106144336.mp4" controls loop autoplay muted poster="https://s.alicdn.com/@sc01/kf/H964a35af96bd40a087740b628c976fdap.jpg"></video>
+        </div>
+        <a class="info" target="_blank" href="#">
+            <div class="jt"></div>
+            <img class="image" src="https://sc01.alicdn.com/kf/Hb446ab1f95484721b75f0a54beb83d54a.jpg">
+            <div class="detail">
+                <p class="title">PRODUCT VIDEO</p>
+                <p class="ms">Our product refer to construction,road construction,ports,and petroleum pipeline and other mechanical equipments</p>
+                <div class="btn trans05s">VIEW MORE</div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <div class="video">
+            <video src="https://cloud.video.alibaba.com/play/u/2153292369/p/1/e/6/t/1/d/hd/50106144336.mp4" controls loop autoplay muted poster="https://s.alicdn.com/@sc01/kf/H964a35af96bd40a087740b628c976fdap.jpg"></video>
+        </div>
+        <a class="info" target="_blank" href="#">
+            <div class="jt"></div>
+            <img class="image" src="https://sc01.alicdn.com/kf/Hb446ab1f95484721b75f0a54beb83d54a.jpg">
+            <div class="detail">
+                <p class="title">PRODUCT VIDEO</p>
+                <p class="ms">Our product refer to construction,road construction,ports,and petroleum pipeline and other mechanical equipments</p>
+                <div class="btn trans05s">VIEW MORE</div>
+            </div>
+        </a>
+    </li>
+</ul>
+                        
+                <div class="reveal-modal">
+                    <p>html部分:</p>
+                    <xmp></xmp>
+                    <p>css部分:</p>
+                    <pre>
+.proVideo{width: 1220px;overflow: hidden;}
+.proVideo li{width: 590px;margin:0 20px 20px 0;float:left;overflow: hidden;}
+.proVideo .video{width: 590px;height: 332px;}
+.proVideo .video video{width: 100%;height: 100%;}
+.proVideo .info{padding: 15px;background: #ffac28;position: relative;display: flex;justify-content: space-between;}
+.proVideo .info .jt{width: 0;height: 0;border-left: 20px solid transparent;border-right: 20px solid transparent;border-bottom: 20px solid #ffac28;position: absolute;top: -20px;left: 25px;z-index: 2;}
+.proVideo .info .image{width: 180px;height: 180px;}
+.proVideo .info .detail{width: 380px;padding: 10px 10px 0 40px;position: relative;}
+.proVideo .info .title{height:24px;line-height: 24px;overflow: hidden;color: #171717;font-size: 18px;font-weight: 500;}
+.proVideo .info .ms{margin-top: 10px;line-height: 20px;height: 100px;overflow: hidden;color: #171717;font-size: 14px;}
+.proVideo .info .btn{padding: 0 20px;height: 30px;line-height:30px;font-size: 15px;color: #fff;letter-spacing: .56px;background: #262626;color:#fff;display: inline-block;}
+.proVideo .info:hover .btn{background:#999;}
+                    </pre>
+                    <a class="close-reveal-modal">×</a>
+                </div>
+
+            </div>          
+
+        </div>
+        </div>
+    </div>
+
+
+<script>
+    $(function(){
+        //图片手风琴
+        $(".accordion .item").hover(function(event) {
+            $(this).addClass('hover').siblings().removeClass('hover');
+        })
+
+        //图片轮播
+        $(".slide .panle .item").hover(function(event) {
+            $key=$(this).index();
+            $(".slide .panles .pic").eq($key).addClass('show').siblings().removeClass('show');
+            $(this).addClass('hover').siblings().removeClass('hover');
+        })
+
+        $(".viewCode").click(function() {
+            var html = $(this).parent().next().prop('outerHTML');
+            $(this).parent().siblings(".reveal-modal").children("xmp").html(html);
+        })
+
+    })
+</script>
+</body>
+</html>

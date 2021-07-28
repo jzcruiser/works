@@ -1,0 +1,147 @@
+
+body {min-width: 1100px;margin: 0;overflow-x: hidden;color: #323233;font-size: 14px;font-family: Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC,Microsoft YaHei;;background-color: #f7f8fa;}
+p { margin: 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0;font-size: inherit;color: #323233;font-weight: normal;line-height: 1.5;}
+ul,ol {margin: 0;padding: 0;list-style: none;}
+a {text-decoration: none;}
+.container{width: 1680px;margin-left:0px;padding:30px 0 80px;}
+.container h3{margin-bottom: 25px;text-align: center;}
+.fl{float: left;margin:0 30px 30px 0;}
+.demoTit{margin-top:5px;}
+.Tit{height:56px;margin-top:-56px;}
+.Tit a{float: right;cursor: pointer;margin-right: 60px;}
+
+
+/*************************纯图片效果css*************************************/
+
+
+/*纯图片效果1*/
+.pic-style-1{width: 300px;height: 210px;}
+.pic-style-1 img{transition:0.3s;}
+.pic-style-1 a:hover img{transform: translateY(-10px);opacity: 0.9;}
+
+/*纯图片效果2*/
+.pic-style-2{width: 300px;height: 210px;}
+.pic-style-2 a{width: 100%;height: 100%;display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.pic-style-2 img{transition:0.3s;}
+.pic-style-2 a:hover{transform: translateY(-20px);opacity: 0.9;}
+.pic-style-2 a:hover img{transform: translateY(20px);}
+
+/*纯图片效果3*/
+.pic-style-3{width: 300px;height: 210px;}
+.pic-style-3 a{width: 100%;height: 100%;display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.pic-style-3 img{transition:0.3s;}
+.pic-style-3 a:hover{transform: translateX(-20px);opacity: 0.9;}
+.pic-style-3 a:hover img{transform: translateX(20px);}
+
+/*纯图片效果4*/
+.pic-style-4{width: 300px;height: 210px;}
+.pic-style-4 a{width: 100%;height: 100%;display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.pic-style-4 img{transition:0.3s;}
+.pic-style-4 a:hover{transform: rotate(15deg);opacity: 0.9;}
+.pic-style-4 a:hover img{transform: rotate(-15deg);}
+
+/*纯图片效果5*/
+.pic-style-5{width: 300px;height: 210px;}
+.pic-style-5 a{width: 100%;height: 100%;display: block;transition: 0.3s cubic-bezier(0.5,3,0.5,0);}
+.pic-style-5 img{transition:0.3s;}
+.pic-style-5 a:hover{transform: scale(1.1);opacity: 0.9;}
+.pic-style-5 a:hover img{transform: scale(0.91);}
+
+
+
+/*纯图片效果6*/
+.pic-style-6{width: 300px;height: 210px;position: relative;overflow: hidden;}
+.pic-style-6 a::before{content: '';position:absolute;top:-100px;right: -100px;bottom: -100px;left: -100px;background: hsla(0,0%,100%,.35);transition:1s;transform: scale3d(1.9,1.9,1) rotate(-45deg) translate3d(0,-115%,0);z-index: 2;}
+.pic-style-6 a:hover::before{transform:scale3d(1.9,1.9,1) rotate(-45deg) translate3d(0,115%,0);}
+
+/*纯图片效果7*/
+.pic-style-7{width: 300px;height: 210px;overflow: hidden;}
+.pic-style-7 img{transition:0.3s;}
+.pic-style-7 a:hover img{transform: scale(1.1);opacity: 0.9;}
+
+/*纯图片效果8*/
+.pic-style-8{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-8 a::before,.pic-style-8 a::after{content: '';position: absolute;opacity: 0;transition:1s ease;z-index: 9;}
+.pic-style-8 a::before{top: 10px;bottom:10px;left:0;right:0;border-top:1px solid #fff;border-bottom:1px solid #fff;transform: scaleX(0);}
+.pic-style-8 a::after{top: 0px;bottom:0px;left:10px;right:10px;border-left:1px solid #fff;border-right:1px solid #fff;transform: scaleY(0);}
+.pic-style-8 img{transition:0.3s;}
+.pic-style-8 a:hover::before,.pic-style-8 a:hover::after{transform: scale(1);opacity: 0.5;}
+.pic-style-8 a:hover img{transform: scale(1.1);opacity: 0.9;}
+
+/*纯图片效果9*/
+.pic-style-9{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-9 a::before{content: '';position: absolute;opacity: 0;top:0;right:0;bottom:0;left: 0;border:4px solid #fff;transition:0.5s;z-index: 9;}
+.pic-style-9 img{transition:0.3s;}
+.pic-style-9 a:hover::before{border:10px solid #fff;;opacity: 0.5;}
+.pic-style-9 a:hover img{transform: scale(1.1);opacity: 0.9;}
+
+/*纯图片效果10*/
+.pic-style-10{width: 300px;height: 210px;}
+.pic-style-10 a{width: 100%;height: 100%;display: block;}
+.pic-style-10 a:hover img{transform: rotateY(360deg);opacity: 0.9;transition:1s;}
+
+/*纯图片效果11*/
+.pic-style-11{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-11 a::before,.pic-style-11 a::after{content: '';background-color: rgba(255,255,255,0.5);position: absolute;opacity: 1;transition:1s ease;z-index: 9;}
+.pic-style-11 a::before{top: 0;bottom: 0;left: 50%;right: 51%;}
+.pic-style-11 a::after{top: 51%;bottom: 50%;left: 0;right: 0;}
+.pic-style-11 a:hover::before{left: 0;right: 0;opacity: 0;}
+.pic-style-11 a:hover::after{top: 0;bottom: 0;opacity: 0;}
+
+/*纯图片效果12*/
+.pic-style-12{width: 300px;height: 210px;overflow: hidden;position: relative;background: #3085a3;}
+.pic-style-12 a::before,.pic-style-12 a::after{content: '';position: absolute;top: 5%;bottom:5%;left:5%;right:5%;opacity: 0;transform: scale(0);transition:1s ease;z-index: 9;}
+.pic-style-12 a::before{border-top:1px solid #fff;border-right:1px solid #fff;transform-origin: right top;}
+.pic-style-12 a::after{border-left:1px solid #fff;border-bottom:1px solid #fff;transform-origin: left bottom;}
+.pic-style-12 img{transform: scale(1.12);transition:0.3s;}
+.pic-style-12 a:hover::before,.pic-style-12 a:hover::after{transform: scale(1);opacity: 0.5;}
+.pic-style-12 a:hover img{transform: scale(1);opacity: 0.6;}
+
+/*纯图片效果13*/
+.pic-style-13{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-13 a::before{content: '';position: absolute;top: 0;left: 0;right: 0;bottom: 0;opacity: 0;transition: opacity 0.3s ease;background-size: 30px 30px;background-image: linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);animation: barberpole 0.5s linear infinite;}
+.pic-style-13 img{transition:0.3s;}
+.pic-style-13 a:hover::before{opacity: 1;}
+.pic-style-13 a:hover img{transform: scale(0.95);}
+@keyframes barberpole{
+	from{background-position:0 0;}
+	to{background-position:60px 30px;}
+}
+
+/*纯图片效果14*/
+.pic-style-14{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-14 span{width:100%;height:100%;position: absolute;display: block;top:0;left: 0;}
+.pic-style-14 a::before,.pic-style-14 a::after,.pic-style-14 span::before,.pic-style-14 span::after{content: '';position: absolute;top:0;width: 25%;height: 100%;background-color: rgba(0,0,0,.4);transition:0.6s ease;z-index: 9;}
+.pic-style-14 a::before{transform:translateY(-100%);left:0%;}
+.pic-style-14 a::after{transform:translateY(100%);left:25%;}
+.pic-style-14 span::before{transform:translateY(-100%);left:50%;}
+.pic-style-14 span::after{transform:translateY(100%);left:75%;}
+.pic-style-14 a:hover::before,.pic-style-14 a:hover::after,.pic-style-14 a:hover span::before,.pic-style-14 a:hover span::after{transform:translateY(0);}
+
+/*纯图片效果15*/
+.pic-style-15{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-15 span{width:100%;height:100%;position: absolute;display: block;top:0;left: 0;}
+.pic-style-15 a::before,.pic-style-15 a::after,.pic-style-15 span::before,.pic-style-15 span::after{content: '';position: absolute;width: 25%;height: 100%;background-color: rgba(0,0,0,.4);opacity: 0;z-index: 9;}
+.pic-style-15 a::before{left:0%;transition:.2s ease;}
+.pic-style-15 a::after{left:25%;transition:.2s ease .2s;}
+.pic-style-15 span::before{left:50%;transition:.2s ease .4s;}
+.pic-style-15 span::after{left:75%;transition:.2s ease .6s;}
+.pic-style-15 a:hover::before,.pic-style-15 a:hover::after,.pic-style-15 a:hover span::before,.pic-style-15 a:hover span::after{opacity: 1;}
+
+/*纯图片效果16*/
+.pic-style-16{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-16 span{width:100%;height:100%;position: absolute;display: block;top:0;left: 0;}
+.pic-style-16 a::before,.pic-style-16 a::after,.pic-style-16 span::before,.pic-style-16 span::after{content: '';position: absolute;width: 25%;height: 100%;background-color: rgba(0,0,0,.4);opacity: 0;transform:translateY(100%);z-index: 9;}
+.pic-style-16 a::before{left:0%;transition:.2s;}
+.pic-style-16 a::after{left:25%;transition:.4s;}
+.pic-style-16 span::before{left:50%;transition:.6s;}
+.pic-style-16 span::after{left:75%;transition:.8s;}
+.pic-style-16 a:hover::before,.pic-style-16 a:hover::after,.pic-style-16 a:hover span::before,.pic-style-16 a:hover span::after{opacity: 1;transform:translateY(0%);}
+
+/*纯图片效果17*/
+.pic-style-17{width: 300px;height: 210px;overflow: hidden;position: relative;}
+.pic-style-17 a:hover:after{position: absolute;content: "";opacity: .8;left: 50%;top: 50%;transform: translate(-50%,-50%);height: 1px;width: 1px;z-index: 4;border: 1px solid transparent;border-radius: 1px;box-sizing: content-box;box-shadow: 0 0 0 0 rgba(255,255,255,.8);background-color: rgba(255,255,255,.1);animation: aperture 1.6s infinite cubic-bezier(.66,0,0,1);}
+@keyframes aperture {
+  to {box-shadow: 0 0 0 105px rgba(232,76,61,0)}
+}
