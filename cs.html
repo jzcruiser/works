@@ -1,14 +1,1677 @@
-            <!--底部背景图-->
-            <image url="https://img.alicdn.com/imgextra/i3/800803731/O1CN01my41Zk1dQqPUB48ec_!!800803731.png">
-                <styleBinding>
-                  <attribute name="width" value="345" />
-                  <attribute name="height" value="480" />
-                </styleBinding>
-                <conditions> 
-                  <condition type="!=" left="$coverImg" right="null">
-                    <dataBinding>
-                      <data name="url" value="$coverImg" />
-                    </dataBinding>
-                  </condition>
-                </conditions>
-              </image>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>新版旺铺模块 – 淘宝天猫通用新旺铺小程序模块</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+<meta name="author" content="FastAdmin">
+
+<link rel="shortcut icon" href="http://dajiangi.com/assets/img/favicon.ico" />
+
+<link href="http://dajiangi.com/assets/css/frontend.min.css?v=1.0.1" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="http://dajiangi.com/assets/js/html5shiv.js"></script>
+  <script src="http://dajiangi.com/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config: {"site":{"name":"\u5927\u5320\u8bbe\u8ba1","cdnurl":"","version":"1.0.1","timezone":"Asia\/Shanghai","languages":{"backend":"zh-cn","frontend":"zh-cn"}},"upload":{"cdnurl":"","uploadurl":"ajax\/upload","bucket":"local","maxsize":"10mb","mimetype":"jpg,png,bmp,jpeg,gif,zip,rar,xls,xlsx","multipart":[],"multiple":false},"modulename":"xcx","controllername":"mk","actionname":"index","jsname":"frontend\/mk","moduleurl":"\/xcx","language":"zh-cn","__PUBLIC__":"\/","__ROOT__":"\/","__CDN__":""}    };
+</script>
+        <link href="http://dajiangi.com/assets/css/mk.css?v=1.0.1" rel="stylesheet">
+        <link href="http://dajiangi.com/assets/css/xcx.css?v=1.0.1" rel="stylesheet">
+    </head>
+
+    <body style="background:#f6f6f6;">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <a id="toggle-btn" href="#" class="menu-btn"><i class="fa fa-navicon"></i></a>
+                    <a class="navbar-brand" href="/" style="padding:10px 0;"><img src="https://www.dajiangi.com/uploads/20201015/c986e319f33f0745eb4f68e87cee5980.png" style="height:50px;" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/index.html" target="_blank">首页</a></li>
+						                        <li><a href="/about.html" target="_blank">联系客服</a></li>
+                        <!-- <li><a href="/about.html" target="_blank"><i class="fa fa-qq fa-fw" style="font-size: 12px;"></i> 提模块需求</a></li> -->
+                        <li><a href="/index/tool/pc.html" target="_blank"><i class="fa fa-desktop fa-fw" style="font-size: 12px;"></i> PC工具</a></li>
+                        <li><a href="/index/tool.html" target="_blank"><i class="fa fa-tablet fa-fw"></i> 无线工具</a></li>
+                        <li class="dropdown" style="margin-right: 16px;">
+                                                        <a href="/index/user/index.html" class="dropdown-toggle" data-toggle="dropdown">会员中心 <b class="caret"></b></a>
+                                                        <ul class="dropdown-menu">
+                                                                <li><a href="/index/user/login.html"><i class="fa fa-sign-in fa-fw"></i> 登 录</a></li>
+                                <li><a href="/index/user/register.html"><i class="fa fa-user-o fa-fw"></i> 注 册</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <nav class="side-navbar">
+          <div class="side-navbar-wrapper">
+            <div class="main-menu">
+              <h5 class="sidenav-heading">新旺铺模块</h5>
+              <ul id="side-main-menu" class="side-menu list-unstyled">                  
+                <!-- <li><a href="index.html"> <i class="fa fa-thumbs-up"></i>推荐模块</a></li> -->                
+				<li><a href="/xcx/mk/index.html#tb" data-toggle="tooltip" data-table-id="table" data-field-index="18" data-row-index="0" data-button-index="1" data-original-title="设计师立荐" style="color:#ff0000;font-weight: bold;"> <i class="fa fa-hand-o-right"></i>必备模块<small class="mk_ico ico1 dt_ico">推荐</small></a></li>
+                <li><a href="/xcx/mk/index.html#hb" data-toggle="tooltip" data-table-id="table" data-field-index="18" data-row-index="0" data-button-index="1" data-original-title="弹窗图片轮播"> <i class="fa fa-image"></i>弹窗海报<small class="mk_ico ico1 dt_ico">必备</small></a></li>
+                <li><a href="/xcx/mk/index.html#sp"> <i class="fa fa-play-circle"></i>多功能视频<small class="mk_ico ico2">推荐</small></a></li>
+                <li><a href="/xcx/mk/index.html#dx"> <i class="fa fa-magic"></i>炫酷动效<small class="mk_ico ico2 dt_ico">特效</small></a></li>
+                <li><a href="/xcx/mk/index.html#hd"> <i class="fa fa-exchange"></i>左右滑动</a></li>
+                <li><a href="/xcx/mk/index.html#djs"> <i class="fa fa-clock-o"></i>倒计时</a></li>
+                <li><a href="/xcx/mk/index.html#kp"> <i class="fa fa-sitemap"></i>多功能卡盘<small class="mk_ico ico6 dt_ico">推荐</small></a></li>
+                <li><a href="/xcx/mk/index.html#idea"> <i class="fa fa-magic"></i>创意模块</a></li>
+                <li><a href="/xcx/mk/index.html#item"> <i class="fa fa-shopping-basket"></i>产品模块</a></li>
+                <li><a href="/xcx/mk/index.html#fl"> <i class="fa fa-list-ul"></i>分类导航</a></li>
+                <li><a href="/xcx/mk/index.html#yhq"> <i class="fa fa-tag"></i>优惠券</a></li>
+                <li><a href="/xcx/mk/index.html#gg"> <i class="fa fa-file-text-o"></i>店铺公告</a></li>
+                <li><a href="/xcx/mk/index.html#t1"> <i class="fa fa-puzzle-piece"></i>套装模板</a></li>
+                <li><a href="/xcx/mk/index.html#weex"> <i class="fa fa-bookmark"></i>分类页定制<small class="mk_ico ico1 dt_ico">定制</small></a></li>
+              </ul>
+            </div>
+            <div class="admin-menu">
+              <h5 class="sidenav-heading">帮助中心</h5>
+              <ul id="side-admin-menu" class="side-menu list-unstyled"> 
+                <li> <a href="/xcx/edu.html"> <i class="fa fa-question-circle-o"></i></i>使用教程</a></li>
+              </ul>
+            </div>
+            <div class="lx-menu">
+                <div class="kf-tit">工作时间: 09:30-18:00</div>
+                <a class="kf-service" href="/about.html" target="_blank">
+                    <img src="https://img.alicdn.com/imgextra/i2/836796077/O1CN01FBUn2N1ulJWTsw6mI_!!836796077.png"><span>联系客服</span>
+                </a>
+            </div>
+          </div>
+        </nav>
+
+        <main class="content">
+            
+
+          <div class="panel-body" style="overflow: hidden;">
+            <div class="mk_ad">
+              <h1>新版旺铺模块<span class="last">-淘宝天猫通用</span></h1>
+              <input type="text" class="form-control names" id="searchInput" placeholder="请输入要搜索的模块关键词">
+              <!-- <div class="btn_box">
+                  <a>设计师推荐搭配</a>
+                  <a>懒人搭配推荐</a>
+              </div> -->
+            </div>
+      <div class="notice" id="contact">
+                <i class="fa fa-bell-o"></i> 此页面用来查看效果展示,订购请点击订购链接跳转到服务市场订购!
+            </div>
+            <div id="mb_content">
+              <div class="row mb_box" id="tb">
+                  <div class="col-md-12 col-sm-12 mk_title" style="border:0;">
+                      <h2><span style="background:linear-gradient(-90deg,#D22CFF,#6e10d7);padding:12px 30px;border-radius:30px;color:#FFF;">商家必备模块</span></h2>
+                      <h4>可根据自身需求随意选购模块,也可以联系客服根据模块热度推荐订购方案</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001464" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.mp4">                           
+                          </video>
+                          <small class="mk_tag mk_tag2">必备</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>
+                        <div class="info">
+                          <div class="mk_sold">弹窗入会视频海报跳动红包</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_00001464" target="_blank"><span>订购新模块</span><span class="mk_xl">1000+在使用</span></a>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="info">
+                          <div class="mk_sold">多功能视频/可轮播</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank"><span>订购新模块</span><span class="mk_xl">700+人付费</span></a>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_0000890" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="info">
+                          <div class="mk_sold">动态滑动分类导航</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_0000890" target="_blank"><span>订购新模块</span><span class="mk_xl">700+人付费</span></a>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00005257" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="info">
+                          <div class="mk_sold">滑动放大-可加热区/视频</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_00005257" target="_blank"><span>订购新模块</span><span class="mk_xl">500+人付费</span></a>
+                      </div>                            
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007039" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="info">
+                          <div class="mk_sold">卡盘切换图片-热区</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_00007039" target="_blank"><span>订购新模块</span><span class="mk_xl">300+人付费</span></a>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="hb">
+                  <div class="col-md-12 col-sm-12 mk_title" style="border:0;">
+                      <h2>弹窗海报</h2>
+                      <h4>支持图片轮播+开场弹窗+跳动红包+视频功能</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001464" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306181677190.mp4">                           
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">弹窗广告视频跳动红包</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00001464" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00008402" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306504490468.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306504490468.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306504490468.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306504490468.mp4">                     
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">弹窗广告视频跳动红包</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00008402" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014114" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306183573461.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306183573461.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306183573461.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306183573461.mp4">                     
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">弹窗广告视频跳动红包</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014114" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000021105" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306186301114.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306186301114.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306186301114.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306186301114.mp4">                     
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">弹窗广告视频跳动红包</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000021105" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="sp">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>多功能视频特效</h2>
+                      <h4>直观突出展示品牌形象，深化产品卖点，提升店铺成交</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306265285899.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">视频背景+轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000013527" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908948078.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908948078.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908948078.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908948078.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">视频背景+轮播/轮播视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000013527" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000016524" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305900004200.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305900004200.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305900004200.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305900004200.mp4">                     
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">视频卡盘轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000016524" target="_blank">订购新模块</a><a href="" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000017037" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908416529.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908416529.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908416529.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305908416529.mp4">                     
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">视频卡盘轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000017037" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="dx">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>炫酷动效</h2>
+                      <h4>动画效果在页面中展示活动或爆款商品卖点，提升店铺形象和点击率</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00008626" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306588610469.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306588610469.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306588610469.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306588610469.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">循环动画开场动画</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00008626" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00008649" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306266005465.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306266005465.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306266005465.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306266005465.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">循环动画开场动画</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00008649" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000018489" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307326501991.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307326501991.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307326501991.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307326501991.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">帧动画/热区/图片切换/可做购物金</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000018489" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="hd">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>左右滑动</h2>
+                      <h4>有限的区域内最大化地展示店铺产品信息，加深用户对店铺认知，提升成交率</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00009882" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306315325654.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306315325654.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306315325654.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306315325654.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">滑动热区-支持视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00009882" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00005257" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636150701.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">滑动放大-可加热区/视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00005257" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000029339" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734253545.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734253545.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734253545.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734253545.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">自动梯台轮播 背景视频可跟随-视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000029339" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000017064" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305959632954.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305959632954.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305959632954.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/305959632954.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">梯台缩放背景切换-视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000017064" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000029403" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323620059.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323620059.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323620059.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323620059.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">视频背景图片滑动可缩放热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000029403" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007024" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636838412.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636838412.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636838412.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306636838412.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag1">视频</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">滑动放大-可加热区/视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007024" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001062" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316435867834.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316435867834.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316435867834.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316435867834.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">滑动放大-可加热区/视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00001062" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014448" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976967307.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976967307.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976967307.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976967307.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">梯台滑动放大(产品)</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014448" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007494" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637206454.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637206454.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637206454.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637206454.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">跑马灯-自动循环滚动</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007494" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00008523" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637094635.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637094635.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637094635.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306637094635.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">跑马灯-自动循环滚动</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00008523" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002104" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732288286.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732288286.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732288286.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732288286.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">滑动产品推荐</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002104" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002780" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976811799.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976811799.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976811799.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306976811799.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">梯台自动轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002780" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="djs">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>倒计时</h2>
+                      <h4>大促必备功能，营造活动氛围和紧张感，提升店铺成交率</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001387" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306975455807.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306975455807.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306975455807.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306975455807.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">倒计时+背景热区支持视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00001387" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007798" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306314157656.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306314157656.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306314157656.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306314157656.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">倒计时-支持自定义倒计时字体</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007798" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="kp">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>多功能卡盘</h2>
+                      <h4>解决店铺内容繁多，页面超长，使买家方便快速找到自己需要的商品</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007039" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306450257679.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘切换图片-热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007039" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00004136" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316087130240.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316087130240.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316087130240.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/316087130240.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘滑动切图-热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00004136" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+          <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000027605" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/312207196854.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/312207196854.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/312207196854.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/312207196854.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘轮播切换图片视频多动画行业通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000027605" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div>
+          <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000023602" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/308820601928.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/308820601928.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/308820601928.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/308820601928.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">图片轮播+卡盘滑动支持视频</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000023602" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div>
+					<div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000029269" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734693498.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734693498.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734693498.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734693498.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">双重卡盘轮播切换二级分类热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000029269" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div>
+				<div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000029284" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734713705.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734713705.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734713705.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315734713705.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘滑动商品分类切换宝贝-通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000029284" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+				</div> 
+				<div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000027563" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323692077.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323692077.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323692077.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315323692077.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘滑动商品分类切换宝贝-通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000027563" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+				</div> 
+				<div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000021610" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315740741011.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315740741011.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315740741011.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/315740741011.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘切换图片-热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000021610" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+				</div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00003419" target="_blank" >          
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310277968595.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310277968595.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310277968595.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310277968595.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘切换产品(可加载产品视频)-通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00003419" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00005355" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412838031.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412838031.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412838031.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412838031.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘切换产品-通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00005355" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00004128" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305733132032.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305733132032.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305733132032.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305733132032.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">卡盘切换产品-通用</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00004128" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div> 
+              <div class="row mb_box" id="kp">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>创意模块</h2>
+                      <h4>个性创意模块 如有更多创意可联系我们实现</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000025639" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/311541314801.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/311541314801.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/311541314801.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/311541314801.mp4">                     
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="info">
+                          <div class="mk_sold">一键加购-加购后跳转领券</div>
+                          <div class="mk_price"><strong>7</strong>&nbsp;元/月</div>
+                        </div>
+                        <a class="newbtns" href="https://zx.taobao.com/detail.html?articleCode=zx_000025639" target="_blank"><span>订购新模块</span><span class="mk_xl">300+在使用</span></a>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000024344" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310991502040.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310991502040.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310991502040.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310991502040.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag5">直播</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">实时直播模块</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000024344" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000017626" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089137183.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089137183.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089137183.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089137183.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag3">热区</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">收起展开热区-可滑动</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000017626" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000015038" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750031597.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750031597.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750031597.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750031597.mp4">                       
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">收起展开产品-可滑动</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000015038" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007683" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306749947648.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306749947648.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306749947648.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306749947648.mp4">                       
+                          </video>
+                          <small class="mk_tag mk_tag4">动效</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">叠卡滑动特效</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007683" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00003525" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413858285.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413858285.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413858285.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413858285.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">飘雪/金币特效图片热区</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00003525" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="item">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>产品模块</h2>
+                      <h4>店铺商品展示 自动加载店铺产品</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_0000891" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305731400585.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305731400585.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305731400585.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305731400585.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">简约产品模块-可滑动轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_0000891" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000021561" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307285921908.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307285921908.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307285921908.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/307285921908.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">纵向卡盘产品推荐-可轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000021561" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014282" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411278007.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411278007.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411278007.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411278007.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">商品轮播展示通用-可滑动轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014282" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">轮播产品推荐</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014161" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411170248.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411170248.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411170248.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411170248.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">轮播产品推荐</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014161" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413082552.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">轮播产品推荐</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002277" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00007252" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412590946.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412590946.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412590946.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306412590946.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">倒计时+换一换</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00007252" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001629" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306751267794.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306751267794.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306751267794.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306751267794.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">换一换-个性商品推荐</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00001629" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00003307" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306088705882.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306088705882.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306088705882.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306088705882.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">单列商品宝贝轮播</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00003307" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089237644.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089237644.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089237644.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089237644.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">飞入动态特效单列宝贝</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00002267" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750155762.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750155762.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750155762.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750155762.mp4">                        
+                          </video>
+                          <small class="mk_tag">商品</small>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动感单品宝贝推荐进度条</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002267" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="fl">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>分类导航</h2>
+                      <h4>快速检索产品 提升买家索引效率</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00004127" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411634624.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411634624.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411634624.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306411634624.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动态滑动分类导航</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00004127" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_0000890" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/305732024666.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动态滑动分类导航</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_0000890" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014447" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089061561.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089061561.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089061561.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089061561.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">分类导航-多样式</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014447" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div> 
+              <div class="row mb_box" id="yhq">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>优惠券</h2>
+                      <h4>优惠券模块展示</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000025527" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310276644644.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310276644644.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310276644644.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310276644644.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动态飞入优惠券关注有礼</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000025527" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014142" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413990627.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413990627.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413990627.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306413990627.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动态优惠券关注有礼</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014142" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00001768" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306092341901.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306092341901.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306092341901.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306092341901.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">动态优惠券关注有礼</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00001768" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div>
+              <div class="row mb_box" id="gg">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>店铺公告</h2>
+                      <h4>店铺公告展示区</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000014197" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750451229.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750451229.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750451229.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306750451229.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">掌柜资料+滚动公告</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014197" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_000025173" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310662369217.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310662369217.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310662369217.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/310662369217.mp4">                        
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">掌柜资料+滚动公告</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000025173" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="https://zx.taobao.com/detail.html?articleCode=zx_00004902" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089381268.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089381268.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089381268.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306089381268.mp4">                       
+                          </video>
+                          <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                        </a>  
+                        <div class="tit2">优惠券+关注有礼+滚动公告</div>
+                        <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00004902" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                      </div>                            
+                  </div> 
+              </div> 
+              <div class="row mb_box" id="t1">
+                    <div class="col-md-12 col-sm-12 mk_title">
+                        <h2>套装模板1<a href="https://zx.taobao.com/list.html?viewMarket=zxModule&key=SR01&sort=default&version=&industry=&pageSize=50" target="_blank" class="zx_buy">点击在服务市场订购</a></h2>
+                        <h4>套装模板，按套设计制作，建议组合购买</h4>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014114" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01fskKRQ2K90QxLsRj2_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">1</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">弹窗红包海报轮播-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014114" target="_blank">订购新模块</a><a href="#" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014142" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01FL3z4o2K90R4SVSXX_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">2</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">优惠券关注领券入会有礼-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014142" target="_blank">订购新模块</a><a href="#" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01AbxvSm2K90RJoH7II_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">3</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">两列三列宝贝展示-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00002959" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014161" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01rwxnI52K90R2d6xDe_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">4</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">单列商品轮播-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014161" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014187" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01ZooqP22K90R4WFlGA_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">5</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">商品滑动放大缩放-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014187" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014197" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN012WVGYv2K90R5GHufE_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">6</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">店铺公告多样式滚动公告-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014197" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_00003419" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01xQWyPr2K90QA8gC2W_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">7</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">卡盘自动轮播 标签切换商品-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_00003419" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014447" target="_blank" >
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01GqS2jV2K90R2owNny_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">8</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">店铺分类导航宝贝分类-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014447" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014448" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01nVKKh12K90R5NHjDv_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">9</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">梯台自动轮播 T台滑动-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014448" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000014282" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01eHZk7V2K90R6SxyIY_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">10</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">通用商品展示-可轮播-SR01</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000014282" target="_blank" >订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div> 
+                    <div class="col-md-12 col-sm-12 mk_title">
+                        <h2>化妆品套装模板<a href="https://zx.taobao.com/list.html?viewMarket=zxModule&key=%E8%90%A8%E5%B0%94%E5%8C%96%E5%A6%86&sort=default&version=&industry=&pageSize=50" target="_blank" class="zx_buy">点击在服务市场订购</a></h2>
+                        <h4>套装模板，按套设计制作，建议组合购买</h4>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000021105" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01yiIRQh2K90RjRpehj_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">1</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">弹窗红包海报轮播-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000021105" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019429" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01wgGdKx2K90Rf210nb_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">2</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">多样式优惠券滚动公告-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019429" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000021104" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01Dw7J8p2K90RswH4uw_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">3</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">多样式宝贝布局换一换商品轮播-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000021104" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019447" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01okfRJc2K90RjKTBm1_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">4</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">卡盘切换商品-多列表产品-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019447" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019492" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01glEBol2K90RklT6gr_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">5</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">滑动缩放图片视频自定义-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019492" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019497" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i1/21629513/O1CN011HRs562K90RVGYvdg_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">6</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">倒计时/背景图/视频/热区-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019497" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019499" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01Zn4Hoy2K90RgQe6Du_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">7</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">商品+产品轮播 可自定义图-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019499" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019501" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01GWElxO2K90RVGN2v9_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">8</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">滑动商品展示 自定宝贝图片-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019501" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019602" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01Fzq2qh2K90RjmQKVB_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">9</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">商品轮播 单品推荐-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019602" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000019712" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i1/21629513/O1CN01M30Hfv2K90Rf14nQX_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">10</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">多功能产品列表 2/3/4列-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000019712" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000020383" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01OggKXN2K90Rm5DCQV_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">11</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">竖版分类切换商品 纵向分类宝贝-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000020383" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000016524" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01qsQubk2K90RKNVghq_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag1">可选</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">视频卡盘轮播开场循环飞入动画-SR02</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000016524" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-12 col-sm-12 mk_title">
+                        <h2>童装套装模板<a href="https://zx.taobao.com/list.html?viewMarket=zxModule&key=%E8%90%A8%E5%B0%94%E7%AB%A5%E8%A3%85&sort=default&version=&industry=&pageSize=50" target="_blank" class="zx_buy">点击在服务市场订购</a></h2>
+                        <h4>套装模板，按套设计制作，建议组合购买</h4>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026041" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01LXbDSo2K90SBAy1yB_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">1</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">弹窗红包海报轮播-SR3_1</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026041" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000025173" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01qF3L8c2K90S60gh4O_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">2</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">店铺公告-滚动头条-SR3_2</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000025173" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000025527" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01gfTZWn2K90S9KLWr2_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">3</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">动态优惠券关注领券有礼会员-SR3_3</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000025527" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000025703" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01v4p0TJ2K90SBj9wUS_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">4</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">卡盘切换商品-多列表产品-SR3_4</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000025703" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026310" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i3/21629513/O1CN01sqFG222K90SC0J8QC_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">5</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">店铺宝贝分类多组卡盘切换-SR3_5</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026310" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026419" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01ZE6F5N2K90SHUMyuQ_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">6</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">三色梯台自动轮播放大T台-SR3_6</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026419" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026566" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01HmPJLy2K90SAWR6et_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">7</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">多组滑动推荐两列滑动-SR3_7</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026566" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026586" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i2/21629513/O1CN01s59ivr2K90SG2D9uh_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">8</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">多功能宝贝轮播单双三四列产品-SR3_8</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026586" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026622" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01WzsfMC2K90SJqcMMD_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">9</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">商品轮播 单品推荐-SR3_9</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026622" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="mb_con">
+                          <a class="mk_pic" href="https://zx.taobao.com/detail.html?articleCode=zx_000026796" target="_blank">
+                            <img src="https://img.alicdn.com/imgextra/i4/21629513/O1CN01BJdeCR2K90SDrbKiN_!!21629513.jpg" width="100%">
+                            <small class="mk_tag mk_tag7">10</small>
+                            <div class="mask"><span class="go_buy">立即订购新版</span></div>
+                          </a>
+                          <div class="tit2">竖版卡盘分类宝贝轮播推荐-SR3_10</div>
+                          <div class="btns"><a href="https://zx.taobao.com/detail.html?articleCode=zx_000026796" target="_blank">订购新模块</a><a href="/about.html" target="_blank" class="mk_contact">联系客服</a></div>
+                        </div>                            
+                    </div>
+
+              </div>
+              <div class="row mb_box" id="weex">
+                  <div class="col-md-12 col-sm-12 mk_title">
+                      <h2>分类重组-店铺系统分类</h2>
+                      <h4>解决店铺类目繁多、分类冗杂、难以索引等难题，支持大图+多链接，工具支持各种动画效果组合</h4>
+                  </div>
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="/about.html" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/283759300220.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/283759300220.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/283759300220.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/283759300220.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag1">定制</small>
+                          <div class="mask"><span class="go_buy">联系客服定制</span></div>
+                        </a>  
+                        <div class="tit2">动态分类效果 - 配套工具(新版可用)</div>
+                        <div class="btns"><a href="">需要定制</a><a href="/about.html" target="_blank" class="mk_contact">联系客服定制</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="/about.html" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306510810671.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306510810671.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306510810671.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306510810671.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag1">定制</small>
+                          <div class="mask"><span class="go_buy">联系客服定制</span></div>
+                        </a>  
+                        <div class="tit2">动态分类效果 - 配套工具(新版可用)</div>
+                        <div class="btns"><a href="">需要定制</a><a href="/about.html" target="_blank" class="mk_contact">联系客服定制</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="/about.html" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306849955500.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/306849955500.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306849955500.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/836796077/p/1/e/6/t/1/306849955500.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag1">定制</small>
+                          <div class="mask"><span class="go_buy">联系客服定制</span></div>
+                        </a>  
+                        <div class="tit2">动态分类效果 - 配套工具(新版可用)</div>
+                        <div class="btns"><a href="">需要定制</a><a href="/about.html" target="_blank" class="mk_contact">联系客服定制</a></div>
+                      </div>                            
+                  </div> 
+                  <div class="col-md-5ths col-sm-6">
+                      <div class="mb_con">
+                        <a class="mk_video" href="/about.html" target="_blank" >         
+                          <video class="lazy" width="300" height="534" muted="true" autoplay="" loop="" muted="" poster="">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/279468380736.webm" type="video/webm" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/279468380736.webm">
+                            <source data-src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/279468380736.mp4" type="video/mp4" src="https://cloud.video.taobao.com//play/u/21629513/p/1/e/6/t/1/279468380736.mp4">                        
+                          </video>
+                          <small class="mk_tag mk_tag1">定制</small>
+                          <div class="mask"><span class="go_buy">联系客服定制</span></div>
+                        </a>  
+                        <div class="tit2">动态分类效果 - 配套工具(新版可用)</div>
+                        <div class="btns"><a href="">需要定制</a><a href="/about.html" target="_blank" class="mk_contact">联系客服定制</a></div>
+                      </div>                            
+                  </div> 
+              </div> 
+
+          </div>
+        </div>
+        </main>
+
+        <footer class="footer" style="clear:both">
+            <p class="copyright">Copyright&nbsp;©&nbsp;2012-2021 Powered by <a href="https://www.dajiangi.com/" target="_blank">DaJiang</a> All Rights Reserved <a href="http://www.beian.miit.gov.cn" target="_blank">鲁ICP备11000051号</a></p>
+        </footer>
+        
+        <div class="kfcon">	
+			<div class="kf_box box_con">
+		        <a class="kefu_part" href="/about.html" target="_blank">
+		            <i class="fa fa-user-circle-o"></i>
+		            客服
+		        </a>
+		    	<div class="introduce">
+		    		<i class="service-ico"></i>
+		    		<p class="service-title">客服中心</p>
+		    		<div class="service-info">
+		    			<span class="ww">
+						  <a href="http://amos.im.alisoft.com/msg.aw?v=2&uid=%E8%90%A8%E5%B0%94&site=cntaobao&s=1&charset=utf-8" target="_blank"><img src="https://img.alicdn.com/imgextra/i2/836796077/O1CN01SR73iJ1ulJUIeiBdE_!!836796077.png">客服1号</a>
+						</span>
+		    			<span class="ww">
+						  <a href="http://amos.im.alisoft.com/msg.aw?v=2&uid=moko%E8%AE%BE%E8%AE%A1&site=cntaobao&s=1&charset=utf-8" target="_blank"><img src="https://img.alicdn.com/imgextra/i2/836796077/O1CN01SR73iJ1ulJUIeiBdE_!!836796077.png">客服2号</a>
+						</span>
+		    			<p class="last-child">在线:9:30-24:00</p>
+		    		</div>
+		    	</div>
+		    </div>	
+			<div class="qq_box box_con">
+		        <a class="kefu_part" href="http://wpa.qq.com/msgrd?v=3&uin=623427353&site=qq&menu=yes" target="_blank">
+		            <i class="fa fa-qq"></i>
+		            QQ群
+		        </a>
+		    	<div class="introduce">
+		    		<i class="service-ico"></i>
+		    		<p class="service-title">QQ群</p>
+		    		<div class="service-info">
+		    			<span class="ww">
+						  <a href="https://jq.qq.com/?_wv=1027&k=cw0HCAj5" target="_blank"><img src="https://img.alicdn.com/imgextra/i3/836796077/O1CN01PTH8d11ulJStcg0x1_!!836796077.png">新旺铺2群</a>
+						</span>
+		    			<span class="ww">
+						  <a href="https://jq.qq.com/?_wv=1027&k=gS8PpaEF" target="_blank"><img src="https://img.alicdn.com/imgextra/i3/836796077/O1CN01PTH8d11ulJStcg0x1_!!836796077.png">新旺铺3群</a>
+						</span>
+		    			<p class="last-child">在线:9:30-24:00</p>
+		    		</div>
+		    	</div>
+		    </div>			
+		    <div class="wx_box box_con">
+		        <a class="weixin_part">
+		            <i class="fa fa-qrcode"></i>
+		            微信
+		        </a>
+		        <div class="wx_tc"></div>
+		    </div>
+		    <div class="top_box box_con" id="scrolltop" style="" >
+		        <a class="app_part">
+		            <i class="fa fa-arrow-up"></i>
+		            顶部
+		        </a>
+		    </div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?977349a1a9c8b53b430d7e4fe6e9e902";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+		<script type="text/javascript" src="https://js.users.51.la/20574413.js"></script>
+		<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JGkSa7Bwkpb28WLg",ck: "JGkSa7Bwkpb28WLg"})</script>
+
+        <script src="http://dajiangi.com/assets/js/require.min.js" data-main="http://dajiangi.com/assets/js/require-frontend.min.js?v=1.0.1"></script>
+        <script type="text/javascript">
+			//视频懒加载
+			document.addEventListener("DOMContentLoaded", function() {
+				var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+				if ("IntersectionObserver" in window) {
+					var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+						entries.forEach(function(video) {
+							//异常浏览器处理，比如UC
+							if(video.isIntersecting==undefined){
+								let flag = false;
+								for (var source in video.target.children) {
+									var videoSource = video.target.children[source];
+									if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE" && !videoSource.src) {
+										videoSource.src = videoSource.dataset.src;
+										flag = true;
+									}
+								}
+								if(flag){
+									video.target.load();
+								}
+								return false;
+							}
+							// 常规浏览器操作
+							if (video.isIntersecting) { //可见时
+								let flag = false;
+								for (var source in video.target.children) {
+									var videoSource = video.target.children[source];
+									if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE" && !videoSource.src) {
+										videoSource.src = videoSource.dataset.src;
+										flag = true;
+									}
+								}
+								if(flag){
+									video.target.load();
+								}else{
+									try {
+										video.target.play();
+									} catch (error) { }
+								}
+								//console.log('可见');
+							}else{  //不可见时
+								//console.log('不可见时');
+								try {
+									video.target.pause();
+								} catch (error) {}
+							}
+						});
+					});
+					lazyVideos.forEach(function(lazyVideo) {
+						lazyVideoObserver.observe(lazyVideo);
+					});
+				}
+			});
+        </script>
+
+    </body>
+
+</html>
